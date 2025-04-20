@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="assets/icon/pancake.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pancake Grid by etofok</title>
+</head>
+<body>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <link rel="stylesheet" href="mainCSS.css">
+  <link rel="stylesheet" href="faq.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="element-scrolldown-arrow.css">
+
+
+
+  <nav class="navbar">
+    <a href="https://discord.gg/grmNuB5cWc" target="_blank">Discord</a>
+    <a href="https://www.donationalerts.com/r/etofok" target="_blank">Donate</a>
+    <!-- <a href="https://www.youtube.com/user/etofok?sub_confirmation=1" target="_blank">YouTube</a> -->
+  </nav>
+
+  <!-- Above the fold -->
+  <div class="section-read-abovethefold nocontextmenu"> 
+
+    <span class="scroll-nagivation" id="scroll-to-top"></span>
+
+    <h1>Pancake Grid</h1>
+    <h4>by etofok</h4>
+    <h2>Hotkeys for Dota 2</h2>
+
+    <img class="nocontextmenu hero" src="assets/images/hero1.png" alt="PancakeGrid"> 
+    
+    <div class="scrolldown-arrow"></div>
+
+  </div>
+
+
+  <div class="section-read-whitebg1 nocontextmenu">
+
+    <span class="scroll-nagivation" id="scroll-to-layout"></span>
+
+    <div class="wrap-list-features">
+
+      <h3>Hotkeys Overview</h3>
+
+      <ul>
+
+        <li><b>Select Group 1</b>: <kbd>1</kbd></li>
+        <li><b>Select Group 2</b>: <kbd>2</kbd></li>
+        <li><b>Select Group 3</b>: <kbd>3</kbd></li>
+        <li><b>Select All Other Units</b>: <kbd>~</kbd></li>
+        <li><b>Select Courier</b>: <kbd>F1</kbd></li>
+
+        <div class="separator"></div>
+
+        <li><b>Abilities</b>: <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> <kbd>T</kbd> </li>
+        <li><b>Abilities (Self)</b>: <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> <kbd>T</kbd> + <kbmod>Alt</kbmod></li>
+        <li><b>Abilities (Learn)</b>: <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> <kbd>T</kbd> + <kbmod>Ctrl</kbmod></li>
+        
+        <div class="separator"></div>
+
+        <li><b>Items</b>: <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd></li>
+        <li><b>Items (Self)</b>: <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd> + <kbmod>Alt</kbmod></li>
+        <li><b>Neutral</b>: <kbd>V</kbd></li>
+        <li><b>Neutral (Self)</b>: <kbd>V</kbd> + <kbmod>Alt</kbmod></li>
+
+        <div class="separator"></div>
+
+        <li><b>Quickbuy</b>: <kbd>B</kbd></li>
+        <li><b>Buy Sticky</b>: <kbd>N</kbd></li>       
+        <li><b>Take from Stash</b>: <kbd>B</kbd> + <kbmod>Alt</kbmod></li>
+
+        <div class="separator"></div>
+
+        <li><b>Teleport Scroll</b>: <kbd>G</kbd></li>
+        <li><b>Teleport Base</b>: <kbd>G</kbd> + <kbmod>Alt</kbmod></li>
+
+        <div class="separator"></div>
+
+        <li><b>Open Shop</b>: <kbmod>Alt</kbmod> + <kbd>WheelUp</kbd></li>
+        <li><b>Courier Deliver</b>: <kbmod>Alt</kbmod> + <kbd>WheelDown</kbd></li>
+        <li><b>Courier Burst</b>: <kbmod>Alt</kbmod> + <kbd>F1</kbd></li>
+
+        <div class="separator"></div>
+
+        <li><b>Attack</b>: <kbd>Spacebar</kbd></li>
+        <li><b>Stop or Hold</b>: <kbd>F</kbd></li>
+        <li><b>Move</b>: <kbd>F</kbd> + <kbmod>Alt</kbmod></li>
+        <li><b>Directional Move</b>: <kbd>CapsLock</kbd></li>
+
+        <div class="separator"></div>
+
+        <li><b>Select Talent Menu</b>: <kbd>F2</kbd></li>
+        <li><b>Select Talent 1</b>: <kbd>1</kbd></li>
+        <li><b>Select Talent 2</b>: <kbd>2</kbd></li>
+
+        <div class="separator"></div>
+
+        <li><b>Chat Wheel 1</b>: <kbd>...</kbd></li>
+        <li><b>Chat Wheel 2</b>: <kbd>...</kbd></li>
+        <li><b>Hero Phases Wheel</b>: <kbd>...</kbd></li>
+        <li><b>Taunt</b>: <kbd>...</kbd></li>
+        <li><b>Scoreboard</b>: <kbd>...</kbd></li>
+
+      </ul>
+    </div>
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Preface</h3>
+
+        <p>A layout should make sense: mechanically, visually and intuitively.</p>
+
+        <p>The more intuitive it is to operate - the better it is for our performance.</p>
+        
+        <p class="mt2">I'm fairly confident this is the best Dota 2 hotkey layout possible.</p>
+
+        <p>And I'm going to explain the logic behind it on this page.</p>
+
+        <p class="mt2">p.s. it's quite extensive.</p>
+
+    </div>
+
+    <div class="wrap-section-block">
+
+      <h3>Alt</h3>
+
+      <p>Think of <kbd>Alt</kbd> as our "self" modifier.</p>
+
+      <p><kbd>Alt</kbd> = "to me".</p>
+
+      <p class="mt2">We are going to use it very extensively.</p>
+
+    </div>
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Selectors</h3>
+
+      <p>We want to group all <act>Select Unit</act> keys close to each other.</p>
+      
+      <p>And we group all these around <kbd>1</kbd></p>
+      
+      <ul>
+        <li><b>Select Group 1:</b> <kbd>1</kbd></li>
+        <li><b>Select Group 2:</b> <kbd>2</kbd></li>
+        <li><b>Select Group 3:</b> <kbd>3</kbd></li>
+        <li><b>Select All Other Units:</b> <kbd>~</kbd></li>
+        <li><b>Select Courier:</b> <kbd>F1</kbd></li>
+      </ul>
+
+      <p>Very simple so far.</p>
+      
+      <p>More on courier usage later.</p>
+
+    </div>
+  
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Abilities</h3>
+
+      <p>Abilities use the intuitive <kbd>Q</kbd><kbd>W</kbd><kbd>E</kbd><kbd>R</kbd><kbd>T</kbd> layout:</p>
+
+        <ul>
+          <li><b>Abilities:</b> <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> <kbd>T</kbd> </li>
+          <li><b>Abilities (Self):</b> <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> <kbd>T</kbd> + <kbmod>Alt</kbmod></li>
+          <li><b>Abilities (Learn):</b> <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> <kbd>T</kbd> + <kbmod>Ctrl</kbmod></li>
+        </ul>
+
+      <p class="mt2">Not everyone knows, but <kbmod>Ctrl</kbmod> + <act>Ability #</act> instantly levels up the ability.</p>
+      
+      <p>This is very convenient. Use it.</p>
+
+
+      <p class="mt2">Now, not every hero has <act>Ability 6</act></p> 
+
+      <p>And when they do, sometimes it's important and sometimes not at all.</p>
+      
+      <p><kbd>Y</kbd> is not a good key for an important ability - too far away.</p>
+      
+      
+      <p class="mt2">If you do not have <act>Select Group 4</act> bound, <kbd>4</kbd> is a great key for one of the abilities.</p>
+       
+      <ul>
+        <li><b>Ability 5 | 6:</b> <kbd>4</kbd></li>
+      </ul>
+
+    </div>
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Items. Explanation</h3>
+
+      <p>We must have instant (and easy!) access to self-cast.</p>
+
+      <p>That's why we <b>CANNOT</b> bind our items to <kbd>Alt</kbd> + <kbd>Anything</kbd>.</p>
+      
+      <p class="mt2"><kbd>Alt</kbd> + <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> is the "HoNTrash" solution for items, used by many.</p>
+      
+      <p class="mt2">There are 3 very big reasons why this solution is... bad.</p>
+
+      <ul>
+        <li>1. Slow, because we have to press 2 keys <kbd>Alt</kbd> + <act>Ability</act></li>
+        <li>2. We can't use <kbd>Alt</kbd> as a modifier.</li>
+        <li>3. Consequently, we have to rely on double-tap to self-cast, which is very long and is prone to missclicks</li>
+      </ul>
+
+      <p class="mt2">There's a better way.</p>
+
+    </div>
+
+    <div class="wrap-section-block">
+
+      <h3>Items</h3>
+
+      <p>Items are top priority in this game and we must have instant access to all of them.</p>
+      
+      <p>Arguably, instant access to items is more important than that of abilities.</p>
+
+      <p class="mt2">And just like with our abilities - we must have instant (and easy!) access to self cast.</p>
+      
+      <p class="mt2">That's why we bind our items right below the ability row.</p>
+
+        <ul>
+          <li><b>Items:</b> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd></li>
+          <li><b>Items (Self):</b> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd> + <kbmod>Alt</kbmod></li>
+        </ul>
+
+      <p><kbmod>Alt</kbmod> is our "to me" modifier.</p>
+
+      <p class="mt2">The <act>Neutral Item</act> is the 7th item, so it follows the <kbd>C</kbd> to the right.</p>
+
+        <ul>
+          <li><b>Neutral:</b> <kbd>V</kbd></li>
+          <li><b>Neutral (Self):</b> <kbd>V</kbd> + <kbmod>Alt</kbmod></li>
+        </ul>
+
+      <p>All items are easily accessible and the layout is visually coherent.</p>
+
+    </div>
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Quickbuy & Sticky</h3>
+        
+      <p>We quickbuy items often.</p>
+      
+      <p>And it follows that we should use the keys that are close to our item binds:</p>
+
+      <ul>
+        <li><b>Quickbuy:</b> <kbd>B</kbd></li>
+        <li><b>Buy Sticky:</b> <kbd>N</kbd></li>
+        <li><b>Take from Stash:</b> <kbd>B</kbd> + <kbmod>Alt</kbmod></li>
+      </ul>
+
+      <p><kbd>B</kbd> for <act>Quick<b>B</b>uy</act>.</p>
+
+      <p class="mt4">Our <act>Buy Sticky</act> is next to <act>Quickbuy</act>, because we often use both at the same time.</p>
+
+      <p>So this is very convenient.</p>
+    
+    </div>
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Teleport Scroll</h3>
+        
+      <p><act>Teleport Scroll</act> is an item.</p>
+      
+      <p>Notably, it is visually above the <act>Neutral Item</act>.</p>
+      
+      <p class="mt2">So, it follows that we should use a key that's close to items and above the <act>Neutral Item</act>.</p>
+
+      <p>That's why we use <kbd>G</kbd>:</p>
+      
+      <ul>
+        <li><b>Teleport Scroll:</b> <kbd>G</kbd></li>
+        <li><b>Teleport to Base:</b> <kbd>G</kbd> + <kbmod>Alt</kbmod></li>
+      </ul>
+
+      <p><kbd>G</kbd> stands for "Go Get Ground", and I find this very intuitive and easy to remember.</p>
+
+      <p class="mt2"><kbmod>Alt</kbmod> + <kbd>G</kbd> follows naturally as the "Go to MY base" key.</p>
+
+    </div>
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Shop & Deliver</h3>
+        
+      <p>While we are on the topic of items, let's discuss buying them.</p>
+    
+      <ul>
+        <li><b>Open Shop:</b> <kbmod>Alt</kbmod> + <kbd>WheelUp</kbd></li>
+        <li><b>Courier Deliver:</b> <kbmod>Alt</kbmod> + <kbd>WheelDown</kbd></li>
+        <li><b>Courier Burst:</b> <kbmod>Alt</kbmod> + <kbd>F1</kbd></li>
+      </ul>
+
+      <p>These keys are very unusual and should surprise most players.</p>
+          
+      <p>But I found this synergy to be the best, by far.</p>
+
+      <p class="mt2">This works because we do our "buying routines" in a quick "swing" by holding <kbmod>Alt</kbmod>.</p>
+
+      <!-- 1 start -->
+      <div class="spoiler-wrapper">
+
+        <div class="spoiler-revealed">
+              
+          <!-- --- --- --- -->
+          <div class="wrap-list-routine">
+
+            <h3>Buying Routine 1</h3>
+
+              <li>1. <kbmod>Alt</kbmod> + <kbmod>WheelUp</kbmod> to <act>Open Shop</act></li>
+              <li>2. Buy things. You can buy things while holding <kbd>Alt</kbd></li>
+              <li>3. <kbmod>Alt</kbmod> + <kbmod>WheelDown</kbmod> to <act>Courier Deliver</act></li>
+              <li>4. <kbmod>Alt</kbmod> + <kbd>F1</kbd> to activate <act>Courier Boost</act></li>
+              <li>5. Done.</li>
+
+          </div>
+
+          <!-- --- --- --- -->
+          <div class="wrap-list-routine">
+
+            <h3>Buying Routine 2</h3>
+
+              <li>1. <kbd>B</kbd> to <act>Quickbuy</act></li>
+              <li>2. <kbd>N</kbd> to <act>Buy Sticky</act> for <act>Teleport Scroll</act></li>
+              <li>3. <kbmod>Alt</kbmod> + <kbmod>WheelDown</kbmod> to <act>Courier Deliver</act></li>
+              <li>4. <kbmod>Alt</kbmod> + <kbd>F1</kbd> to activate <act>Courier Boost</act></li>
+              <li>5. Done.</li>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Courier</h3>
+        
+      <p>Now, the logistics for the items.</p>
+    
+      <ul>
+        <li><b>Select Courier:</b> <kbd>F1</kbd></li>
+        <li><b>Courier Burst:</b> <kbd>F1</kbd> + <kbmod>Alt</kbmod></li>
+        <li><b>Courier Shield:</b> <kbd>F1</kbd> → <kbd>R</kbd></li>
+      </ul>
+
+      <p><kbd>F1</kbd> for <act>Select Courier</act> is great, because now we have all our <act>Select Unit</act> actions very close to each other.</p>
+
+      <p class="mt2">Courier maintains its actions on <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> <kbd>T</kbd>, </p>
+      
+      <p>but it's better to bind <act>Courier Shield</act> to <kbd>R</kbd> as its "Ultimate" ability.</p>
+
+      <p class="mt2">We are handling <act>Courier Burst</act> with <kbmod>Alt</kbmod> + <kbd>F1</kbd>.</p>
+      
+    </div>
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Command Card</h3>
+        
+      <p>I have been using <kbd>Spacebar</kbd> for <act>Attack</act> and <kbd>F</kbd> for <act>Stop</act> with great success for more than 10 years in many games.</p>
+      
+      <ul>
+        <li><b>Attack:</b> <kbd>Spacebar</kbd></li>
+        <li><b>Stop or Hold:</b> <kbd>F</kbd></li>
+        <li><b>Move:</b> <kbd>F</kbd> + <kbmod>Alt</kbmod></li>
+        <li><b>Directional Move:</b> <kbd>CapsLock</kbd></li>
+      </ul>
+
+      <p><act>Directional Move</act> is used a lot on heroes like Shadow Fiend and Slark.</p>
+
+      <p>It's weird key, because it's not a priority, but 'spikes in value' - so needs easy access.</p>
+
+      <p class="mt2"><kbd>CapsLock</kbd> is a great key for <act>Directional Move</act>, because it allows us to easily use all abilities and items while pressing it. </p>
+      
+      <p class="mt2"><act>Move</act> has a few use cases (i.e. to stick Juggernaut Bladestorm).</p>
+      
+      <p>So we are using <kbd>Alt</kbd> + <kbd>F</kbd> because why not..</p></p>
+      
+      <p class="mt4">I promise you will find these extremely comfortable.</p>
+
+    </div>
+
+    <div class="wrap-list-benefits">
+      <h3>This setup is...</h3>
+      <ul>
+        <li>Noticeably <b>more compact</b></li>
+        <li>Noticeably <b>easier on your fingers</b></li>
+        <li>Noticeably <b>less wrist movement</b></li>
+        <li>Noticeably <b>faster gameplay</b></li>
+        <li><b>100%</b> the best choice</li>
+      </ul>
+    </div>
+
+    <a href=" " target="_blank" class="cta-button-one centered">Download Now</a>
+
+    <div class="scrolldown-arrow"></div>
+
+  </div>
+
+  <!--  -->
+
+  <!-- --- --- --- -->
+  <div class="section-read-whitebg1 nocontextmenu">
+
+    <div class="wrap-section-block">
+
+      <h3>Options</h3>
+        
+      <p>Here's a few very important in-game options that you don't want to miss.</p>
+
+    </div>
+
+  </div>
+
+  <!-- -->
+
+  <div class="section-read-whitebg1">
+
+    <h1>Please enjoy</h1>
+
+  </div>
+
+
+  <div class="section-read-footer">
+
+    <p>written and produced by <a href="https://linktr.ee/etofok" target="_blank">etofok</a> 2025</p>
+
+    <p>Pancake Grid is not affiliated with or endorsed by Valve. All relevant trademarks belong to their respective owners.</p>
+
+  </div>
+
+  <script src="main.js"></script>
+  <script src="navbar.js"></script>
+  <script src="element-scrolldown-arrow.js"></script>
+
+</body>
+</html>
