@@ -54,20 +54,18 @@
 
     </div>
 
-
-
-    <div class="scrolldown-arrow"></div>
+        <div class="scrolldown-arrow"></div>
 
   </div>
 
 
 
 
-  <div class="section-read-whitebg1 nocontextmenu">
+  <div class="section-main nocontextmenu">
 
     <span class="scroll-nagivation" id="scroll-to-layout"></span>
 
-    <div class="wrap-list-features">
+    <div class="wrap-section-block">
 
       <h3>Hotkeys Overview</h3>
 
@@ -106,15 +104,15 @@
         <div class="separator"></div>
 
         <li><b>Open Shop:</b> <kbmod>Alt</kbmod> + <kbd>WheelUp</kbd></li>
-        <li><b>Courier Deliver:</b> <kbmod>Alt</kbmod> + <kbd>WheelDown</kbd></li>
-        <li><b>Courier Burst:</b> <kbmod>Alt</kbmod> + <kbd>F1</kbd></li>
+        <li><b>Courier Deliver:</b> <kbmod>Alt</kbmod> + <kbd>F1</kbd></li>
+        <li><b>Courier Burst:</b> <kbmod>Alt</kbmod> + <kbd>WheelDown</kbd></li>
 
         <div class="separator"></div>
 
         <li><b>Attack:</b> <kbd>Spacebar</kbd></li>
         <li><b>Stop or Hold:</b> <kbd>F</kbd></li>
-        <li><b>Move:</b> <kbd>F</kbd> + <kbmod>Alt</kbmod></li>
         <li><b>Directional Move:</b> <kbd>CapsLock</kbd></li>
+        <li><b>Move:</b> <kbd>F</kbd> + <kbmod>Alt</kbmod></li>
 
         <div class="separator"></div>
 
@@ -195,11 +193,17 @@
 
       <p>Because we need to aim these very carefully - it's better to keep them on Normal Cast.</p>
 
-      <img class="mt2" class="nocontextmenu hero" src="assets/images/options/Abilities1.jpg" alt=""> 
+      <img class="nocontextmenu hero" src="assets/images/options/Abilities1.jpg" alt=""> 
+
+      <p>Alternatively, check <act>Triggered on key release</act> in Quick Cast options.</p>
+
+      <img class="nocontextmenu hero" src="assets/images/options/OnKeyRelease.jpg" alt="">
+
+      <p>This allows us to instantly fire the ability as it is on Quick Cast, but holding down the ability key will not fire it until we release it.</p>
 
     </div>
 
-
+    <!-- --- --- --- -->
     <div class="wrap-section-block">
 
       <h3>Abilities - Ability 6</h3>  
@@ -218,7 +222,7 @@
 
       <p class="mt2">For example, for Invoker I would use <kbd>4</kbd> for <act>Invoke</act>, which would mean my invoked abilities are <kbd>R</kbd> and <kbd>T</kbd>.</p>
 
-      <img class="mt2" class="nocontextmenu hero" src="assets/images/options/InvokerBinds.jpg" alt=""> 
+      <img class="nocontextmenu hero" src="assets/images/options/InvokerBinds.jpg" alt=""> 
 
       <p class="mt2">But for most heroes I use <kbd>R</kbd> for <act>Ultimate Ability</act>.</p>
 
@@ -228,39 +232,19 @@
     <!-- --- --- --- -->
     <div class="wrap-section-block">
 
-      <h3>Items - Explanation</h3>
-
-      <p>Items are top priority in this game and we must have instant access to all of them.</p>
-
-      <p>We also need instant access to Self-Cast them.</p>
-
-      <p class="mt2">That's why we <b>CANNOT</b> bind our items to <kbd>Alt</kbd> + <kbd>Anything</kbd>,</p>
-
-      <p>because we wouldn't be able to use <kbd>Alt</kbd> as a modifier for Self-Cast!</p>
-      
-      <p class="mt2">It's also slower, because instead of 1 button we have to cast 2 buttons for 1 action.</p>
-      
-      <p class="mt2">For example, this is the "Heroes of Newerth" solution for items, still used by many.</p>
-
-      <p><kbd>Alt</kbd> + <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd></p>
-      
-      <p class="mt2">While not terrible - it's bad for the reasons above.</p>
-
-      <p><b>What if I told you there's a better way?</b></p>
-
-    </div>
-
-    <div class="wrap-section-block">
-
       <h3>Items</h3>
 
-      <p>Items are top priority in this game and we must have instant access to all of them.</p>
-      
       <p>Arguably, instant access to items is more important than instant access to abilities.</p>
 
-      <p class="mt2">And just like with abilities - we must have instant access to Self-Cast.</p>
+      <p>That's why we bind them all to Quick Cast.</p>
+
+      <p class="mt2">And just like with abilities - we must have instant access to self-cast.</p>
+
+      <p>That's why we don't bind them to <kbd>Alt</kbd> to begin with.</p>
       
-      <p class="mt2">That's why we bind our items right below the ability row.</p>
+      <p class="mt2">We also want them to be intuitive and easily accessible.</p>
+      
+      <p>That's why we bind our items right below the ability row.</p>
 
         <ul>
           <li><b>Items:</b> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd></li>
@@ -269,10 +253,42 @@
 
       <p class="mt2">This way, all items are easily accessible, self-cast is easily accessible and the layout is visually coherent with the in-game interface.</p>
 
+      <img class="nocontextmenu hero" src="assets/images/options/ItemBinds6.jpg" alt=""> 
+
       <p class="mt2">You will never miss click anything this way.</p>
 
     </div>
 
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Per-Item Overrides</h3>
+
+      <p>Very few people <b>even aware</b> of this option, but it's the best.</p>
+      
+      <img class="nocontextmenu hero" src="assets/images/options/PerItemOverrides.jpg" alt=""> 
+
+      <p>This menu allows us to set Normal Cast <b>per item</b>, overriding Quick Cast <b>slot</b> binds.</p>
+      
+      <p class="mt2">Uncheck the following:</p>
+
+      <p><act>Observer and Sentry Wards</act></p>
+      <p><act>Gleipnir</act></p>
+      <p><act>Meteor Hammer</act></p>
+      <p><act>Fallen Sky</act></p>
+
+      <img class="nocontextmenu hero" src="assets/images/options/PerItemOverridesItems.jpg" alt=""> 
+
+      <p>Regardless of their inventory slot these items will be on Normal Cast.</p>
+
+      <p class="mt2">This is especially valuable for <act>Observer and Sentry Wards</act> because we need to see the visual AOE indicator before placement and to double-tap to switch between Obs / Sentry.</p>
+      
+      <p class="mt2">Same logic for the other ones.</p>
+
+    </div>
+
+    <!-- --- --- --- -->
     <div class="wrap-section-block">
 
       <h3>Neutral Item</h3>
@@ -284,9 +300,38 @@
           <li><b>Neutral (Self):</b> <kbd>V</kbd> + <kbmod>Alt</kbmod></li>
         </ul>
 
-      <img class="mt2" class="nocontextmenu hero" src="assets/images/options/ItemBinds.jpg" alt=""> 
+      <img class="nocontextmenu hero" src="assets/images/options/ItemBinds.jpg" alt=""> 
 
-      <p class="mt2">Easily accessible and visually coherent.</p>
+      <p class="mt2">Easily accessible and (almost) visually coherent.</p>
+
+    </div>
+
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h3>Teleport Scroll</h3>
+        
+      <p><act>Teleport Scroll</act> is an item.</p>
+      
+      <p class="mt2">Let's use a key that's close to items.</p>
+
+      <p class="mt2">That's why we use <kbd>G</kbd>:</p>
+      
+      <ul>
+        <li><b>Teleport Scroll:</b> <kbd>G</kbd></li>
+        <li><b>Teleport to Base:</b> <kbd>G</kbd> + <kbmod>Alt</kbmod></li>
+      </ul>
+
+      <p class="mt2">Think of <kbd>G</kbd> as "<b>G</b>o <b>G</b>round".</p>
+
+      <p><kbmod>Alt</kbmod> + <kbd>G</kbd> follows naturally as the "<b>Go to my base</b>" key.</p>
+
+      <p class="mt2">Despite the fact that on user interface <act>Teleport Scroll</act> is below the <act>Neutral Item</act>, this setup is very intuitive.</p>
+
+      <img class="nocontextmenu hero" src="assets/images/options/TeleportScroll.jpg" alt=""> 
+
+      <p class="mt4">Do not bind <act>Teleport Scroll</act> to Quick Cast - use Normal Cast.</p>
 
     </div>
 
@@ -310,42 +355,9 @@
       <p><act>Buy Sticky</act> is next to <act>Quickbuy</act>, because we often use both at the same time.</p>
 
       <p class="mt2"><kbd>B</kbd>uy <kbd>N</kbd>ow.</p>
-
-
     
     </div>
 
-    <!-- --- --- --- -->
-    <div class="wrap-section-block">
-
-      <h3>Teleport Scroll</h3>
-        
-      <p><act>Teleport Scroll</act> is an item.</p>
-      
-      <p>Notably, it is visually above the <act>Neutral Item</act> on user interface.</p>
-      
-      <p class="mt2">So, it follows that we should use a key that's close to items and above the <act>Neutral Item</act>.</p>
-
-      <p class="mt2">That's why we use <kbd>G</kbd>:</p>
-      
-      <ul>
-        <li><b>Teleport Scroll:</b> <kbd>G</kbd></li>
-        <li><b>Teleport to Base:</b> <kbd>G</kbd> + <kbmod>Alt</kbmod></li>
-      </ul>
-
-      <p class="mt2">I think of <kbd>G</kbd> as "<b>G</b>o <b>G</b>round".</p>
-
-      <p><kbmod>Alt</kbmod> + <kbd>G</kbd> follows naturally as the "<b>Go to my base</b>" key.</p>
-
-      <p class="mt2">Overall, I find this very intuitive and easy to use.</p>
-
-      <img class="mt2" class="nocontextmenu hero" src="assets/images/options/TeleportScroll.jpg" alt=""> 
-
-      <p class="mt4">Do not bind <act>Teleport Scroll</act> to Quick Cast - use Normal Cast.</p>
-
-
-
-    </div>
 
     <!-- --- --- --- -->
     <div class="wrap-section-block">
@@ -370,11 +382,9 @@
 
       <p>Highly recommended to bind <act>Courier Shield</act> to <kbd>R</kbd> as its "Ultimate" ability, and because it's easier to reach.</p>
 
-      <img class="mt2" class="nocontextmenu hero" src="assets/images/options/CourierBinds.jpg" alt=""> 
+      <img class="nocontextmenu hero" src="assets/images/options/CourierBinds.jpg" alt=""> 
       
     </div>
-
-
 
 
     <!-- --- --- --- -->
@@ -404,25 +414,29 @@
 
     </div>
 
+    <!-- --- --- --- -->
     <div class="wrap-section-block">
 
       <h3>Move, Directional Move</h3>
-
-      <ul>
-        <li><b>Move:</b> <kbd>F</kbd> + <kbmod>Alt</kbmod></li>
-        <li><b>Directional Move:</b> <kbd>CapsLock</kbd></li>
-      </ul>
 
       <p class="mt4"><act>Directional Move</act> is used a lot on heroes like Shadow Fiend and Slark.</p>
 
       <p>It's weird key, because it's not a priority, but 'spikes in value' - so needs easy access.</p>
 
       <p class="mt2"><kbd>CapsLock</kbd> is a great key for <act>Directional Move</act>, because it allows us to use all abilities and items while pressing it.</p>
-      
+
+      <ul>
+        <li><b>Directional Move:</b> <kbd>CapsLock</kbd></li>
+      </ul>
+
       <p class="mt4"><act>Move</act> has a few use cases (for example to stick Juggernaut Bladestorm through the jukes), but overall it's the least used action button.</p>
       
       <p class="mt2">So that's why we are using <kbd>Alt</kbd> + <kbd>F</kbd> because that's what's left and it's somewhat related to movement.</p></p>
-      
+
+      <ul>
+        <li><b>Move:</b> <kbd>F</kbd> + <kbmod>Alt</kbmod></li>
+      </ul>
+
       <p class="mt2">Either way, I promise you will find these extremely comfortable.</p>
 
     </div>
@@ -469,7 +483,7 @@
         
       <p>Over a decade I figured this is <b>the</b> required setup to play.</p>
     
-      <img class="mt2" class="nocontextmenu hero" src="assets/images/options/ChatWheel1.jpg" alt=""> 
+      <img class="nocontextmenu hero" src="assets/images/options/ChatWheel1.jpg" alt=""> 
 
       <p class="mt2">Towards the top we have progressively "aggressive" call-outs.</p>
 
@@ -524,46 +538,32 @@
 
     </div>
 
-    <!--
-    <a href=" " target="_blank" class="cta-button-one centered">Download Now</a>
-
-    -->
-
-  </div>
-
-  <!--  -->
-
-
-    <div class="wrap-list-benefits">
-      <h3>This setup is...</h3>
-      <ul>
-        <li>Noticeably <b>more compact</b></li>
-        <li>Noticeably <b>easier on your fingers</b></li>
-        <li>Noticeably <b>less wrist movement</b></li>
-        <li>Noticeably <b>faster gameplay</b></li>
-        <li><b>100%</b> the best choice</li>
-      </ul>
-    </div>
-
-
-  <!-- --- --- --- -->
-  <div class="section-read-whitebg1 nocontextmenu">
-
     <div class="wrap-section-block">
 
-      <h3>Options</h3>
+      <h3>Work in Progress...</h3>
         
-      <p>Here's a few very important in-game options that you don't want to miss.</p>
+      <p>...</p>
 
       <p><b>Work in Progress...</b></p>
 
     </div>
 
-  </div>
+
+  </div>   <!-- section-main -->
+
+
+
+  <!-- --- --- --- -->
+
+
+    <!--
+    <a href=" " target="_blank" class="cta-button-one centered">Download Now</a>
+
+    -->
 
   <!-- -->
 
-  <div class="section-read-whitebg1">
+  <div class="section-main">
 
     <h1>Please enjoy</h1>
 
