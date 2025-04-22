@@ -2,6 +2,8 @@
 html {
   box-sizing: border-box;
     overflow-x: hidden;
+
+
 }
 
 *,
@@ -17,6 +19,33 @@ body {
   background-color: #121212;
   color: #E0E0E0;
   overflow-x: hidden;
+}
+
+
+img {
+  border: 1px solid #333333;
+  box-shadow: inset 0 -0.5rem 0.5rem -0.5rem rgba(110, 110, 110, 0.5);
+  border-radius: 5px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.heroicon {
+  border: 1px solid #333333;
+  box-shadow: inset 0 -0.5rem 0.5rem -0.5rem rgba(110, 110, 110, 0.5);
+  display: inline-flex;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  height: 32px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: bottom;
+
 }
 
 /* Typography */
@@ -120,17 +149,6 @@ li {
   flex-direction: column;
 }
 
-img {
-  border: 1px solid #333333;
-  box-shadow: inset 0 -0.5rem 0.5rem -0.5rem rgba(110, 110, 110, 0.5);
-  border-radius: 5px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .section-main {
   margin: 0 auto;
   padding: 3rem 0;
@@ -169,10 +187,12 @@ img {
   text-align: left;
   vertical-align: baseline;
   flex: 0 0 190px;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 .wrap-section-block h3 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 1.25em;
@@ -233,7 +253,7 @@ img {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
   font-family: monospace;
-  font-size: 0.95em;
+  font-size: 1em;
   line-height: 1;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
@@ -243,6 +263,7 @@ img {
   border: 1px solid #444444;
   color: #00CED1;
   gap: 1em; /* Added gap for potential spacing */
+
 }
 
 :root kbmod {
@@ -306,31 +327,51 @@ img {
   color: #00CED1;
 }
 
-/* Media Queries */
+
+
 @media (max-width: 600px) {
- 
+
+   :root kbd,
+   :root kbmod,
+   :root act {
+      margin-left: 0.15rem;
+      margin-right: 0.15rem;
+    }   
+
     .wrap-list-benefits {
         overflow: hidden;
         width: calc(100% - 2%); /* Make the width 100% minus 1% on each side */
         flex: 0 0 200px;
+        font-size: 1rem;
+
     }
 
     .wrap-section-block {
         overflow: hidden;
-        width: calc(100% - 2%); /* Make the width 100% minus 1% on each side */
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 1rem;
     }
+
+    .wrap-section-block p {
+        overflow: hidden;
+       /* width: calc(100% - 2%); /* Make the width 100% minus 1% on each side */
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1rem;
+    } 
+
+    .wrap-section-block h3 {
+        font-size: 2rem;
+    } 
 
     .wrap-section-block ul {
         overflow: hidden;
-        width: calc(100% - 2%); /* Make the width 100% minus 1% on each side */
     }
 
     .wrap-section-block li b {
-      flex: 0 0 50%;
-    }
-
-    :root {
-        font-size: 85%;
+      flex: 0 0 45%;
+      font-size: 1rem;
     }
 
 }

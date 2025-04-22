@@ -25,7 +25,7 @@
   <!-- Above the fold -->
   <div class="section-read-abovethefold nocontextmenu"> 
 
-    <span class="scroll-nagivation" id="scroll-to-top"></span>
+    <span class="scroll-nagivation" id="scroll-to-top" style="margin-bottom: 0"></span>
 
     <h1>ETOFOK LAYOUT</h1>
     <h4>for Dota 2</h4>
@@ -94,7 +94,6 @@
 
         <li><b>Quickbuy:</b> <kbd>B</kbd></li>
         <li><b>Buy Sticky:</b> <kbd>N</kbd></li>       
-        <li><b>Take from Stash:</b> <kbd>B</kbd> + <kbmod>Alt</kbmod></li>
 
         <div class="separator"></div>
 
@@ -104,8 +103,8 @@
         <div class="separator"></div>
 
         <li><b>Open Shop:</b> <kbmod>Alt</kbmod> + <kbd>WheelUp</kbd></li>
-        <li><b>Courier Deliver:</b> <kbmod>Alt</kbmod> + <kbd>F1</kbd></li>
-        <li><b>Courier Burst:</b> <kbmod>Alt</kbmod> + <kbd>WheelDown</kbd></li>
+        <li><b>Courier Deliver:</b> <kbmod>Alt</kbmod> + <kbd>WheelDown</kbd></li>
+        <li><b>Courier Burst:</b> <kbmod>Alt</kbmod> + <kbd>B</kbd></li>
 
         <div class="separator"></div>
 
@@ -208,7 +207,7 @@
 
       <h3>Abilities - Ability 6</h3>  
 
-      <p>Now, not every hero has <act>Ability 6</act>.</p> 
+      <p>Not every hero has <act>Ability 6</act>.</p> 
 
       <p>And when they do, sometimes it's important and sometimes not at all.</p>
       
@@ -236,15 +235,15 @@
 
       <p>Arguably, instant access to items is more important than instant access to abilities.</p>
 
-      <p>That's why we bind them all to Quick Cast.</p>
+      <p>That's why we bind items to Quick Cast.</p>
 
       <p class="mt2">And just like with abilities - we must have instant access to self-cast.</p>
 
-      <p>That's why we don't bind them to <kbd>Alt</kbd> to begin with.</p>
+      <p>That's why we don't bind items to <kbd>Alt</kbd> to begin with.</p>
       
       <p class="mt2">We also want them to be intuitive and easily accessible.</p>
       
-      <p>That's why we bind our items right below the ability row.</p>
+      <p>That's why we bind items right below the ability row.</p>
 
         <ul>
           <li><b>Items:</b> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd></li>
@@ -280,12 +279,10 @@
 
       <img class="nocontextmenu hero" src="assets/images/options/PerItemOverridesItems.jpg" alt=""> 
 
-      <p>Regardless of their inventory slot these items will be on Normal Cast.</p>
+      <p>Regardless of the inventory slot, these items will use Normal Cast.</p>
 
-      <p class="mt2">This is especially valuable for <act>Observer and Sentry Wards</act>, because we need to see the visual AOE indicator for placement and to double-tap to switch between Obs / Sentry.</p>
+      <p class="mt2">This is especially valuable for <act>Observer and Sentry Wards</act>, because we need to see the visual AOE indicator for their placement and be able to double-tap to switch between them.</p>
       
-      <p class="mt2">Same logic for the other ones.</p>
-
     </div>
 
     <!-- --- --- --- -->
@@ -293,7 +290,7 @@
 
       <h3>Neutral Item</h3>
 
-      <p class="mt2">The <act>Neutral Item</act> is the 7th item, so it follows the <kbd>C</kbd> to the right.</p>
+      <p class="mt2"><act>Neutral Item</act> is the 7th item, so it follows the <kbd>C</kbd> to the right.</p>
 
         <ul>
           <li><b>Neutral:</b> <kbd>V</kbd></li>
@@ -311,13 +308,7 @@
     <div class="wrap-section-block">
 
       <h3>Teleport Scroll</h3>
-        
-      <p><act>Teleport Scroll</act> is an item.</p>
-      
-      <p class="mt2">Let's use a key that's close to items.</p>
 
-      <p class="mt2">That's why we use <kbd>G</kbd>:</p>
-      
       <ul>
         <li><b>Teleport Scroll:</b> <kbd>G</kbd></li>
         <li><b>Teleport to Base:</b> <kbd>G</kbd> + <kbmod>Alt</kbmod></li>
@@ -327,11 +318,11 @@
 
       <p><kbmod>Alt</kbmod> + <kbd>G</kbd> follows naturally as the "<b>Go to my base</b>" key.</p>
 
-      <p class="mt2">Despite the fact that on user interface <act>Teleport Scroll</act> is below the <act>Neutral Item</act>, this setup is very intuitive.</p>
+      <p class="mt2">Despite the fact that in the user interface <act>Teleport Scroll</act> is below <act>Neutral Item</act>, this setup is still very intuitive.</p>
 
       <img class="nocontextmenu hero" src="assets/images/options/TeleportScroll.jpg" alt=""> 
 
-      <p class="mt4">Do not bind <act>Teleport Scroll</act> to Quick Cast - use Normal Cast.</p>
+      <p class="mt4">Do not bind <act>Teleport Scroll</act> as Quick Cast - use Normal Cast.</p>
 
     </div>
 
@@ -340,14 +331,11 @@
 
       <h3>Quickbuy & Sticky</h3>
         
-      <p>We buy items often.</p>
+      <p>We use these often, so they should be accessible.</p>
       
-      <p>And it follows that we should use the keys that are close to our item binds:</p>
-
       <ul>
         <li><b>Quickbuy:</b> <kbd>B</kbd></li>
         <li><b>Buy Sticky:</b> <kbd>N</kbd></li>
-        <li><b>Take from Stash:</b> <kbd>B</kbd> + <kbmod>Alt</kbmod></li>
       </ul>
 
       <p><kbd>B</kbd> for <act>Quick<b>B</b>uy</act> - makes sense to me.</p>
@@ -364,25 +352,39 @@
 
       <h3>Shop & Courier</h3>
         
-      <p>While we are on the topic of items, let's discuss buying them.</p>
+      <p>While we are on the topic of items, let's discuss the shop.</p>
      
-      <p>These keys are very unusual and should surprise most players.</p>
+      <p>These keys are unusual and should surprise most players.</p>
     
       <ul>
-        <li><b>Open Shop:</b> <kbmod>Alt</kbmod> + <kbd>WheelUp</kbd></li>
         <li><b>Select Courier:</b> <kbd>F1</kbd></li>
-        <li><b>Courier Deliver:</b> <kbmod>Alt</kbmod> + <kbd>F1</kbd></li>
-        <li><b>Courier Burst:</b> <kbmod>Alt</kbmod> + <kbd>WheelDown</kbd></li>
+        <li><b>Open Shop:</b> <kbmod>Alt</kbmod> + <kbd>WheelUp</kbd></li>
+        <li><b>Courier Deliver:</b> <kbmod>Alt</kbmod> + <kbd>WheelDown</kbd></li>
+        <li><b>Courier Burst:</b> <kbmod>Alt</kbmod> + <kbd>B</kbd></li>
+        <li><b>Courier Shield:</b> <kbmod>Alt</kbmod> + <kbd>N</kbd></li>
       </ul>
-
     
-      <p class="mt2"><kbmod>Alt</kbmod> + <kbd>F1</kbd> makes sense for <act>Courier Deliver</act>, because "<b>Courier to me</b>".</p>
+      <p class="mt2">We do not want to move our hand from the resting position.</p>
 
-      <p class="mt2">Courier maintains its actions on <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> <kbd>T</kbd>.</p>
+      <p>That's why <kbmod>Alt</kbmod> + <kbd>WheelUp</kbd> and <kbmod>Alt</kbmod> + <kbd>WheelDown</kbd> are fantastic binds.</p>
 
-      <p>Highly recommended to bind <act>Courier Shield</act> to <kbd>R</kbd> as its "Ultimate" ability.</p>
+      <p class="mt2">It's very often we need to shop while in action - so we need to do it quickly.</p>
 
-      <p><kbd>R</kbd> is also much easier to reach.</p>
+      <p>Ideally, without moving our fingers - in case we need to react.</p>
+      
+      <p class="mt2">A unique setup, but it's by far the best for ergonomics and speed.</p>
+      
+      <p class="mt4"><kbmod>Alt</kbmod> + <kbd>B</kbd> for <act>Courier Burst</act> is easy to reach.</p>
+      
+      <p><kbmod>Alt</kbmod> + <kbd>N</kbd> for <act>Courier Shield</act> we rarely use, but might need.</p>
+     
+
+
+      <p class="mt4">Courier maintains its actions on <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> <kbd>T</kbd>.</p>
+
+      <p class="mt2">Highly recommended to bind <act>Courier Shield</act> to <kbd>R</kbd> as its "Ultimate" ability.</p>
+
+      <p>Because <kbd>R</kbd> is also much easier to reach.</p>
 
       <img class="nocontextmenu hero" src="assets/images/options/CourierBinds.jpg" alt=""> 
       
@@ -403,9 +405,9 @@
 
       <p><act>Attack</act> on <kbd>Spacebar</kbd> is a <b>fantastic</b> bind.</p>
 
-      <p class="mt2">Thumb is usually a very underutilized finger, so for such a frequent action - it's just great.</p>
+      <p class="mt2">The thumb is usually an underutilized finger, so for such a frequent action as <act>Attack</act> - it's just great.</p>
       
-      <p>And having it right under abilities and items - just makes perfect sense.</p>
+      <p>And having <act>Attack</act> right below our action keys - just makes perfect sense.</p>
 
       <p class="mt2"><act>Stop</act> is displaced to the right, so that it fits between <act>Items</act> and <act>Teleport Scroll</act>.</p> 
 
@@ -421,9 +423,11 @@
 
       <h3>Move, Directional Move</h3>
 
-      <p class="mt4"><act>Directional Move</act> is used a lot on heroes like Shadow Fiend and Slark.</p>
+      <p class="mt4"><act>Directional Move</act> is used on heroes like Shadow Fiend<img class="nocontextmenu heroicon" src="assets/images/heroicon/shadowfiend.jpg" alt=""> and Slark<img class="nocontextmenu heroicon" src="assets/images/heroicon/slark.jpg" alt="">.</p>
 
-      <p>It's a weird key, because it's not a priority, but 'spikes in value' - so needs easy access.</p>
+      <p>It's a weird key; it's not a priority, but 'spikes in value'.</p>
+
+      <p>Despite its rare use - we need easy access.</p>
 
       <p class="mt2"><kbd>CapsLock</kbd> is a great key for <act>Directional Move</act>, because it allows us to use all abilities and items while pressing it.</p>
 
@@ -433,7 +437,7 @@
 
       <p class="mt4"><act>Move</act> has a few use cases (for example to stick Juggernaut Bladestorm through the jukes), but overall it's the least used action button.</p>
       
-      <p class="mt2">So that's why we are using <kbd>Alt</kbd> + <kbd>F</kbd> because that's what's left and it's somewhat related to movement.</p></p>
+      <p class="mt2">So that's why we are using <kbd>F</kbd> + <kbd>Alt</kbd> because that's what's left and it's somewhat related to movement.</p></p>
 
       <ul>
         <li><b>Move:</b> <kbd>F</kbd> + <kbmod>Alt</kbmod></li>
@@ -466,7 +470,7 @@
         
       <p>This is not for flavor - this is a mandatory bind, and it has to be easily accessible.</p>
       
-      <p><act>Emotional Damage</act> is a real thing, as is <act>Emotional Support</act>.</p>
+      <p>Emotional Damage is a real thing, as is Emotional Support.</p>
       
       <ul>
         <li><b>Chat Wheel:</b> <kbd>H</kbd></li>
@@ -497,7 +501,7 @@
 
       <p class="mt2"><act>Fight Under Tower</act> probably contributes to half of my MMR.</p>
       
-      <p>Synergizes perfectly well with every other call out.</p>
+      <p>Synergizes perfectly well with every other call-out.</p>
       
       <p class="mt2">It's the backbone of "<b>DO NOT DO ANYTHING STUPID</b>".</p>
       <p>Prepares the team for action.</p> 
@@ -512,7 +516,7 @@
       
       <p>Generally useful around objectives, especially high-ground.</p>
       
-      <p class="mt2">Used with <act>Get Back</act> or <act>I'm retreating</act> works as the "<b>Please Disperse</b>" call out to forfeit an objective so that everyone is free to push out lanes or get extra farm.</p>
+      <p class="mt2">When used with <act>Get Back</act> or <act>I'm retreating</act> works as the "<b>Please Disperse</b>" call-out to forfeit an objective so that everyone is free to push out lanes or get extra farm.</p>
      
       <p class="separator mt2"></p>
 
@@ -522,13 +526,15 @@
 
       <p class="separator mt2"></p>
 
-      <p class="mt2"><act>On my way</act> indicates our intent to join.</p>
+      <p class="mt2"><act>On my way</act> indicates our intent <b>to join</b>.</p>
 
-      <p>So it serves as "<b>Wait for me</b>" and "<b>I'm not there yet</b>" at the same time.</p>
+      <p>It serves as "<b>Wait for me</b>" and "<b>I'm not there yet</b>" at the same time.</p>
 
-      <p class="mt2"><act>I'm retreating</act> indicates our intent NOT to join.</p>
+      <p class="mt2"><act>I'm retreating</act> indicates our intent <b>not to join</b>.</p>
 
-      <p class="mt2">These are great call-outs, because they lower the chance of our team overextending. Our team needs to know whether or not they can rely on us to make better decisions.</p>
+      <p class="mt2">These are great call-outs, because they lower the chance of our team overextending.</p>
+
+      <p>The team needs to know whether or not they can rely on us to make better decisions.</p>
 
       <p class="separator mt2"></p>
 
