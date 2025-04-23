@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    /* section scroll */
-    const downarrow1 = document.querySelector('.scrolldown-arrow');
-    if (!downarrow1) {
+    const scrollarrowhero = document.getElementById('scroll-arrow-hero');
+    if (!scrollarrowhero) {
         return
     }
 
@@ -11,8 +10,25 @@ document.addEventListener('DOMContentLoaded', function() {
         return
     }
 
-    downarrow1.addEventListener('click', () => {
+    scrollarrowhero.addEventListener('click', () => {
       scrollToLayout.scrollIntoView({ behavior: 'smooth' });
+    });    
+
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const logonavbar = document.getElementById('logo-navbar');
+    if (!logonavbar) {
+        return
+    }
+    const scrollToTop = document.getElementById('scroll-to-top');
+    if (!scrollToTop) {
+        return
+    }
+    logonavbar.addEventListener('click', () => {
+        scrollToTop.scrollIntoView({ behavior: 'smooth' });
     });
 
 });

@@ -45,10 +45,8 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   vertical-align: bottom;
-
 }
 
-/* Typography */
 h1 {
   font-size: 3rem;
   font-weight: 800;
@@ -188,7 +186,7 @@ li {
   vertical-align: baseline;
   flex: 0 0 190px;
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .wrap-section-block h3 {
@@ -338,12 +336,24 @@ li {
       margin-right: 0.15rem;
     }   
 
+    .section-read-abovethefold h1 {
+      font-size: 2.5rem;
+    }
+    .section-read-abovethefold h2 {
+      font-size: 2.5rem;
+    }
+    .section-read-abovethefold h3 {
+    }
+    .section-read-abovethefold h4 {
+      font-size: 1rem;
+    }
+
+
     .wrap-list-benefits {
         overflow: hidden;
         width: calc(100% - 2%); /* Make the width 100% minus 1% on each side */
         flex: 0 0 200px;
         font-size: 1rem;
-
     }
 
     .wrap-section-block {
@@ -359,6 +369,7 @@ li {
         padding-left: 5%;
         padding-right: 5%;
         font-size: 1rem;
+        margin-bottom: 1rem;
     } 
 
     .wrap-section-block h3 {
@@ -372,6 +383,11 @@ li {
     .wrap-section-block li b {
       flex: 0 0 45%;
       font-size: 1rem;
+    }
+
+    img {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
 
 }

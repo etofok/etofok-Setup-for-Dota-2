@@ -1,8 +1,7 @@
 .scrolldown-arrow {
     position: relative;
     margin-bottom: 2rem;
-    margin-top: 2rem;
-    transform: translateX(-50%);
+    margin-top: -3rem;
     width: 24px;
     height: 24px;
     border-left: 2px solid #777;
@@ -27,4 +26,12 @@
     60% {
         transform: translateX(-50%) translateY(0.25rem) rotate(-45deg);
     }
+}
+
+
+@media (max-width: 600px) {
+
+    .scrolldown-arrow {
+    } 
+
 }
