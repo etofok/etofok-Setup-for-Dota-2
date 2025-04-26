@@ -1,9 +1,6 @@
-/* Base Styles */
 html {
   box-sizing: border-box;
-    overflow-x: hidden;
-
-
+  overflow-x: hidden;
 }
 
 *,
@@ -85,7 +82,6 @@ h3 {
   padding-bottom: 0.75em;
 }
 
-/* Lists */
 ol,
 ul {
   margin-top: 1.5rem;
@@ -105,7 +101,6 @@ li {
   color: #E0E0E0;
 }
 
-/* Layout Components */
 .centered {
   margin: 0 auto;
   display: flex;
@@ -166,8 +161,8 @@ li {
   font-size: 1.1em;
   margin: 2rem auto;
   margin-bottom: 5rem;
-  width: calc(100% - 2%); /* Make the width 100% minus 1% on each side */
-  max-width: 800px; /* Still respect the maximum width */
+  width: calc(100% - 2%);
+  max-width: 800px;
   padding: 2em;
   background-color: #212121;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
@@ -226,30 +221,22 @@ li {
   flex: 0 0 220px;
 }
 
-/* Adjust first child margins in wrap-section-block */
 .wrap-section-block act:first-child,
+.wrap-section-block spell:first-child,
 .wrap-section-block kbmod:first-child,
 .wrap-section-block kbd:first-child {
   margin-left: 0;
 }
 
-/* Adjust first child margins in wrap-list-routine */
-.wrap-list-routine act:first-child,
-.wrap-list-routine kbmod:first-child,
-.wrap-list-routine kbd:first-child {
-  margin-left: -0.5em;
-}
-
-
-/* Keyboard Input Styles */
 :root kbd,
 :root kbmod,
+:root spell,
 :root act {
   display: inline-block;
   border-radius: 0.4rem;
-  padding: 0.4em 0.6em;
-  margin-left: 0.3rem;
-  margin-right: 0.3rem;
+  padding: 0.4em 0.5em;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
   font-family: monospace;
   font-size: 1em;
   line-height: 1;
@@ -260,14 +247,13 @@ li {
   background-color: #333333;
   border: 1px solid #444444;
   color: #00CED1;
-  gap: 1em; /* Added gap for potential spacing */
-
+  gap: 1em;
 }
 
 :root kbmod {
   background-color: #333333;
   border: 1px solid #444444;
-  color: #00CED1; /* Dark Cyan */
+  color: #00CED1;
   min-width: 3.5em;
   text-align: center;
 }
@@ -280,49 +266,14 @@ li {
   text-align: center;
 }
 
-/* Wrap List: Benefits */
-.wrap-list-benefits {
-  overflow: hidden;
-  font-size: 1.1em;
-  margin: 2rem auto;
-  width: calc(100% - 5%); /* Make the width 100% minus 1% on each side */
-  max-width: 550px; /* Still respect the maximum width */
-  padding: 2.5em;
-  background-color: #212121;
-  box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.3);
-  color: #E0E0E0;
-  border: 1px solid #333333;
-  border-radius: 1rem;
-  vertical-align: baseline;
-}
-
-.wrap-list-benefits h3 {
-  font-size: 1.9rem;
-  color: #FFD700;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
+:root spell {
+  background-color: #444432;
+  border: 1px solid #444444;
+  border-radius: 0.2rem;
+  color: #AACED1;
   text-align: center;
-}
-
-.wrap-list-benefits ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.wrap-list-benefits li {
-  padding: 1rem 0;
-  border-bottom: 1px solid #333333;
-  color: #E0E0E0;
-}
-
-.wrap-list-benefits li:last-child {
-  border-bottom: none;
-}
-
-.wrap-list-benefits li b {
-  font-weight: 700;
-  color: #00CED1;
+  margin-right: -0.7rem;
+  z-index: -10;
 }
 
 
@@ -349,13 +300,6 @@ li {
     }
 
 
-    .wrap-list-benefits {
-        overflow: hidden;
-        width: calc(100% - 2%); /* Make the width 100% minus 1% on each side */
-        flex: 0 0 200px;
-        font-size: 1rem;
-    }
-
     .wrap-section-block {
         overflow: hidden;
         padding-left: 2%;
@@ -365,7 +309,6 @@ li {
 
     .wrap-section-block p {
         overflow: hidden;
-       /* width: calc(100% - 2%); /* Make the width 100% minus 1% on each side */
         padding-left: 5%;
         padding-right: 5%;
         font-size: 1rem;
@@ -430,14 +373,14 @@ li {
 }
 
 .cta-button-one {
-  background-color: #FFD700; /* Gold */
-  color: #121212; /* Even darker background for contrast */
+  background-color: #FFD700;
+  color: #121212;
 }
 
 .cta-button-one:hover {
   color: #121212;
   transform: translate3d(0, 0.125rem, 0);
-  background-color: #B8860B; /* Dark Goldenrod on Hover */
+  background-color: #B8860B;
   box-shadow: rgba(0, 0, 0, 0.3) 0.5rem 0.5rem 0.5rem -1rem;
 }
 
@@ -446,7 +389,6 @@ li {
   outline: none;
 }
 
-/* Color Modifiers */
 .color_youtube {
   background-color: #FF0000;
 }
@@ -455,12 +397,10 @@ li {
   background-color: #9146FF;
 }
 
-/* Separator */
 .separator {
   border-top: 1px solid #333;
 }
 
-/* Margin Utilities */
 .mt1 {
   margin-top: 1em;
 }

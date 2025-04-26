@@ -1,14 +1,13 @@
 .scrolldown-arrow {
     position: relative;
+    margin-left: 1rem; /* I don't know */
     margin-bottom: 2rem;
     margin-top: -3rem;
     width: 24px;
     height: 24px;
     border-left: 2px solid #777;
     border-bottom: 2px solid #777;
-    transform: translateX(-50%) rotate(180deg);
     animation: bounce 3.5s infinite;
-    opacity: 0.7;
     cursor: pointer;
 }
 
