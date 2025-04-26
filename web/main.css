@@ -127,7 +127,7 @@ li {
   box-sizing: border-box;
 }
 
-.section-read-abovethefold {
+.section-abovethefold {
   background: linear-gradient(to bottom, #121212, #212121);
   text-align: center;
   width: 100%;
@@ -158,18 +158,30 @@ li {
 
 .wrap-section-block {
   overflow: hidden;
+  color: #f0f0f0;
+  background-image:
+    radial-gradient(circle at top center, rgba(155, 155, 155, 0.15) 0%, transparent 25rem),
+    linear-gradient(to bottom, #151515, #101010);
+  background-repeat: no-repeat;
   font-size: 1.1em;
   margin: 2rem auto;
   margin-bottom: 5rem;
   width: calc(100% - 2%);
   max-width: 800px;
   padding: 2em;
-  background-color: #212121;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  color: #E0E0E0;
   border: 1px solid #333333;
-  border-radius: 0.75rem;
+  border-radius: 4rem;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
   vertical-align: baseline;
+  box-shadow:
+    0 0.2rem 0.5rem rgba(0, 0, 0, 0.9),
+    0 1rem 1.5rem -0.5rem rgba(0, 0, 0, 0.9);
+}
+
+
+.wrap-section-block .radiant {
+
 }
 
 .wrap-section-block p {
@@ -182,6 +194,7 @@ li {
   flex: 0 0 190px;
   font-size: 1.1rem;
   margin-bottom: 0rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .wrap-section-block h2 {
@@ -205,6 +218,7 @@ li {
     border-radius: 20px;
     overflow: hidden;
     width: calc(100% - 1%);
+    background-color: #181818;
 }
 
 .wrap-section-block li {
@@ -232,43 +246,73 @@ li {
 :root kbmod,
 :root spell,
 :root act {
-  display: inline-block;
-  border-radius: 0.4rem;
-  padding: 0.4em 0.5em;
+ display: inline-block;
+  border-radius: 0.3rem;
+  padding: 0.5em 0.7em;
   margin-left: 0.1rem;
   margin-right: 0.1rem;
   font-family: monospace;
-  font-size: 1em;
-  line-height: 1;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 0.9em;
+  line-height: 1.2;
+  box-shadow:
+    0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5),
+    inset 0 0.05rem 0.1rem rgba(255, 255, 255, 0.1);
+  background-color: #3a3a3a;
+  border: 1px solid #222;
+  color: #00CED1;
+  text-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.4);
+  vertical-align: middle;
+  background-image: linear-gradient(to bottom, #3a3a3a 0%, #444 50%, #3a3a3a 100%)
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
+
 :root kbd {
-  background-color: #333333;
-  border: 1px solid #444444;
+  background-color: #161616;
+  border: 1px solid #272727;
   color: #00CED1;
   gap: 1em;
 }
 
+:root kbd:hover {
+  background-color: #272727;
+  border-color: #272727;
+  cursor: pointer;
+}
+
 :root kbmod {
-  background-color: #333333;
-  border: 1px solid #444444;
+  background-color: #161616;
+  border: 1px solid #272727;
   color: #00CED1;
   min-width: 3.5em;
   text-align: center;
 }
 
+:root kbmod:hover {
+  background-color: #272727;
+  border-color: #272727;
+  cursor: pointer;
+}
+
 :root act {
-  background-color: #222232;
-  border: 1px solid #444444;
+  background-color: #222242;
+  border: 1px solid #222242;
   border-radius: 0.2rem;
   color: #AACED1;
   text-align: center;
 }
 
+:root act:hover {
+  background-color: #323252;
+  border-color: #222242;
+  cursor: pointer;
+}
+
 :root spell {
-  background-color: #444432;
-  border: 1px solid #444444;
+  background-color: #111122;
+  border: 1px solid #222233;
   border-radius: 0.2rem;
   color: #AACED1;
   text-align: center;
@@ -276,7 +320,11 @@ li {
   z-index: -10;
 }
 
-
+:root spell:hover {
+  background-color: #212132;
+  border-color: #212132;
+  cursor: pointer;
+}
 
 @media (max-width: 600px) {
 
@@ -287,15 +335,15 @@ li {
       margin-right: 0.15rem;
     }   
 
-    .section-read-abovethefold h1 {
+    .section-abovethefold h1 {
       font-size: 2.5rem;
     }
-    .section-read-abovethefold h2 {
+    .section-abovethefold h2 {
       font-size: 2.5rem;
     }
-    .section-read-abovethefold h3 {
+    .section-abovethefold h3 {
     }
-    .section-read-abovethefold h4 {
+    .section-abovethefold h4 {
       font-size: 1rem;
     }
 

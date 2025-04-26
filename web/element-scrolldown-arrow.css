@@ -1,19 +1,22 @@
 .scrolldown-arrow {
-    position: relative;
-    margin-left: 1rem; /* I don't know */
-    margin-bottom: 2rem;
-    margin-top: -3rem;
-    width: 24px;
-    height: 24px;
-    border-left: 2px solid #777;
-    border-bottom: 2px solid #777;
-    animation: bounce 3.5s infinite;
-    cursor: pointer;
+  position: relative; /* Or absolute, fixed */
+  margin-bottom: 2rem;
+  margin-top: -3rem;
+  width: 24px;
+  height: 24px;
+  border-left: 2px solid #777;
+  border-bottom: 2px solid #777;
+  animation: bounce 3.5s infinite;
+  cursor: pointer;
+  margin-left: auto;  /* Push from the left */
+  margin-right: auto; /* Push from the right */
+  display: block;     /* Ensure it's a block-level element for margin auto to work */
 }
 
 .scrolldown-arrow:hover {
     opacity: 1;
 }
+
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
