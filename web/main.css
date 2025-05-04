@@ -37,11 +37,11 @@ img {
   display: inline-flex;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  height: 32px;
+  height: 36px;
 
   margin-top: 0;
   margin-bottom: 0;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 h1 {
@@ -246,11 +246,12 @@ li {
 :root kbmod,
 :root spell,
 :root act {
- display: inline-block;
+  display: inline-block;
   border-radius: 0.3rem;
   padding: 0.5em 0.7em;
   margin-left: 0.1rem;
   margin-right: 0.1rem;
+  margin-bottom: 3px;
   font-family: monospace;
   font-size: 0.9em;
   line-height: 1.2;
