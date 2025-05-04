@@ -19,18 +19,20 @@
   letter-spacing: 0.5px;
   padding: 0 1rem;
 }
+
 .navbar a {
   color: #F5F5F5;
   font-weight: 100;
   text-decoration: none;
-  height: 100%;
   display: flex;
   align-items: center;
-  padding: 0.75rem 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   flex-shrink: 1;
-  min-width: 0;
   transition: background-color 0.2s ease;
-  box-sizing: border-box;
+  min-width: 0;
+  height: 3rem;
+  min-height: 3rem;
 }
 
 .navbar a:hover {
@@ -76,6 +78,7 @@
 }
 
 @media (max-width: 600px) {
+
   .navbar {
     justify-content: center;
     height: 2rem;
@@ -85,6 +88,10 @@
 
   .navbar a {
     font-size: 1em;
+    padding-bottom: 0em;
+    padding-top: 0em;
+    min-height: 0rem;
+    height: 0rem;
   }
 
   .navbar .logo {
