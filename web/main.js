@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         btn.addEventListener('click', function() {
             const answer = this.nextElementSibling;
-            //answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
 
             if (answer.classList.contains("show")) {
               answer.classList.remove("show");
@@ -26,9 +25,56 @@ document.addEventListener('DOMContentLoaded', function() {
 
        element.addEventListener('contextmenu', () => {
           event.preventDefault();
+          console.log("tik");
        })
 
     });
 
 }); // DOMContentLoaded
 
+
+
+
+
+/* magnifiable img */
+document.addEventListener('DOMContentLoaded', () => {
+    const magnifiableImages = document.querySelectorAll('.magnifiable');
+    let overlay = document.querySelector('.magnify-overlay');
+    let overlayImg = null; // store img element inside the overlay
+
+    // create the overlay
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.classList.add('magnify-overlay');
+        document.body.appendChild(overlay);
+
+        overlayImg = document.createElement('img');
+        overlay.appendChild(overlayImg);
+    } else {
+        overlayImg = overlay.querySelector('img');
+        if (!overlayImg) {
+            overlayImg = document.createElement('img');
+            overlay.appendChild(overlayImg);
+        }
+    }
+
+    magnifiableImages.forEach(img => {
+        img.addEventListener('click', () => {
+            overlayImg.src = img.src;
+            overlay.classList.add('active');
+        });
+    });
+
+    // close the overlay on click
+    overlay.addEventListener('click', () => {
+        overlay.classList.remove('active');
+        setTimeout(() => { overlayImg.src = ''; }, 300);
+    });
+
+    // escape to close
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && overlay.classList.contains('active')) {
+            overlay.classList.remove('active');
+        }
+    });
+});
