@@ -116,11 +116,11 @@
         <div class="separator"></div>
 
         <li><b>Select Courier:</b> <kbd>F1</kbd></li>
-        <li><b>Quickbuy:</b> <kbd>B</kbd></li>
-        <li><b>Courier Deliver:</b> <kbd>N</kbd></li>
-        <li><b>Courier Burst:</b> <kbd>M</kbd></li>
-        <li><b>Buy Sticky:</b> <kbd>H</kbd></li>      
-        <li><b>Open Shop:</b> <kbd>Y</kbd></li>
+        <li><b>Open Shop:</b> <kbd>Alt</kbd>+<kbd>1</kbd></li>
+        <li><b>Quickbuy:</b> <kbd>Alt</kbd>+<kbd>2</kbd></li>
+        <li><b>Courier Deliver:</b> <kbd>Alt</kbd>+<kbd>3</kbd></li>
+        <li><b>Courier Burst:</b> <kbd>Alt</kbd>+<kbd>4</kbd></li>
+        <li><b>Buy Sticky:</b> <kbd>Y</kbd></li>      
 
         <div class="separator"></div>
 
@@ -684,47 +684,60 @@
 
       <h2>Shop & Courier<img class="heroicon" src="assets/images/neutralicon/shopkeeper.jpg" alt=""></h2>
              
-      <ul>
-        <li><b>Quickbuy:</b> <kbd>B</kbd></li>
-        <li><b>Courier Deliver:</b> <kbd>N</kbd></li>
-        <li><b>Courier Burst:</b> <kbd>M</kbd></li>
-        <li><b>Buy Sticky:</b> <kbd>H</kbd></li>      
-        <li><b>Open Shop:</b> <kbd>Y</kbd></li>
-        <li><b>Select Courier:</b> <kbd>F1</kbd></li>
-      </ul>
+      <p>
+        <span class="red">Limitation?</span><br><br>
+        A lot of keys don't work for <act>Courier Deliver</act> and <act>Courier Boost</act> while the 'Search' input element of <act>Shop</act> is in focus.
 
-      <p class="mt2">
-        <kbd>B</kbd><act>Quick<b>B</b>uy</act> is next to the right of <kbd>V</kbd><act>Neutral Item</act>
+        <img class="" src="assets/images/options/options-shop-search-bar.jpg" alt="">
+
+        Things like numbers <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> go into the 'Search' bar as text:<br><br>
+
+        <img class="" src="assets/images/options/options-shop-number-2.jpg" alt="">
+
+        <img class="" src="assets/images/options/options-shop-number-7.jpg" alt="">
+
+        However, there is no reason for keys like <kbd>F1</kbd><kbd>F2</kbd><kbd>F3</kbd> or their <kbd>Alt</kbd> variations to behave like this. But they do.
       </p>
 
       <p class="mt2">
-        <kbd>N</kbd><act>Courier Deliver</act> is next to the right of <kbd>B</kbd><act>Quick<b>B</b>uy</act><br>
+        This matters because we have to <b>close the shop window</b> before we can use these hotkeys.<br>
+        Alternatively, we can disable <act>Shop Search Gets Focus On Open</act><br>
+        I personally did the latter:
       </p>
 
-      <p class="mt2">
-        <kbd>M</kbd><act>Courier Boost</act> is next to the right of <kbd>N</kbd><act>Courier Deliver</act><br>
-      </p>      
-
-      <p class="mt2">
-        We've built the following pattern:<br>
-        <act>Quick<b>B</b>uy</act> → <act>Courier Deliver</act> → <act>Courier Boost</act></act>
-      </p>
+      <img class="" src="assets/images/options/options-shopsearchgetsfocusonopen.jpg" alt="">
 
       <div class="separator mt2"></div>      
 
       <p class="mt2">
-        <kbd>H</kbd><act>Buy Sticky</act> is above <kbd>B</kbd><act>Quick<b>B</b>uy</act><br>
-        Think of it as an appendix to the <kbd>B</kbd> → <kbd>N</kbd> → <kbd>M</kbd> pattern.</act>
+        Now, there are many different configurations for all-things-shop.<br>
+        This is what I'm currently using.<br>
       </p>
 
+      <ul>
+        <li><b>Select Courier:</b> <kbd>F1</kbd></li>
+        <li><b>Open Shop:</b> <kbd>Alt</kbd>+<kbd>1</kbd></li>
+        <li><b>Quickbuy:</b> <kbd>Alt</kbd>+<kbd>2</kbd></li>
+        <li><b>Courier Deliver:</b> <kbd>Alt</kbd>+<kbd>3</kbd></li>
+        <li><b>Courier Burst:</b> <kbd>Alt</kbd>+<kbd>4</kbd></li>
+        <li><b>Buy Sticky:</b> <kbd>Y</kbd></li>      
+      </ul>
+
       <p class="mt2">
-        <kbd>Y</kbd><act>Open Shop</act> is just a key that's left.<br>
-        Anything else either too far, or doesn't make sense to me.
+        In any case, we want the following pattern to be easy:<br>
+        <act>QuickBuy</act> → <act>Courier Deliver</act> → <act>Courier Boost</act>
       </p>
+
+      <div class="separator mt2"></div>
       
       <p class="mt2">
         <kbd>F1</kbd><act>Select Courier</act> is near control groups — makes sense as a "Select" key.<br>
-        <span class="smaller">But it can be any key in my opinion.</span><br>
+        In reality, it's pretty rare we need to control the courier, so the hotkey can be anything.
+      </p>
+            
+      <p class="mt2">
+        <kbd>Y</kbd><act>Buy Stick<b>y</b></act> is not used very often, but I like having hotkeys for everything.<br>
+        It used to be a much more frequent key when we weren't getting free <spell>Teleport Scrolls</spell><img class="heroicon" src="assets/images/itemicon/teleportscroll.jpg" alt=""> on death.
       </p>
       
       <div class="separator mt2"></div>
@@ -758,22 +771,20 @@
 
       <ul>
         <li><b>Chat Wheel:</b> <kbd>F2</kbd></li>
+        <li><b>Chat Wheel:</b> <kbd>F2</kbd>+<kbd>Alt</kbd></li>
       </ul>
-
-      <p>I never use <act>Chat Wheel 2</act>, which is probably a skill issue.</p>
-      <p>For it just set the next available <kbd>F-key</kbd> like <kbd>F3</kbd>.</p>
 
     </div>
 
     <!-- --- --- --- -->
     <div class="wrap-section-block">
 
-      <h2>Chat Wheel Setup</h2>
+      <h2>Chat Wheel 1 Setup</h2>
         
       <p>Over a decade I figured this is <b>the</b> required setup to play.</p>
       <p>I absolutely, desperately want these call-outs on hand.</p>
     
-      <img class="" src="assets/images/options/options-chat-wheel-full.jpg" alt=""> 
+      <img class="" src="assets/images/options/options-chat-wheel-full-01.jpg" alt=""> 
 
       <p class="mt2">Towards the top I have progressively "aggressive" call-outs.</p>
       <p>Towards the bottom I have progressively "defensive" call-outs.</p>
@@ -834,8 +845,22 @@
 
       <p class="mt2">Use with <act>Fight under tower</act>, <act>Get back</act> and <act>Group Up</act> to bring your team into safety.</p>
 
+    </div>   
+
+    <!-- --- --- --- -->
+    <div class="wrap-section-block">
+
+      <h2>Chat Wheel 2 Setup</h2>
+        
+      <p>Exclusively flavor and emotions sink.</p>
+      <p>Use whatever you like.</p>
+    
+      <img class="" src="assets/images/options/options-chat-wheel-full-02.jpg" alt=""> 
+
     </div>
 
+
+    <!-- -- -->
     <div class="wrap-section-block">
 
       <h2>Camera Grip & Edge Pan</h2>
@@ -844,7 +869,7 @@
 
       <p>Especially so, if your mouse sensitivity is low (<1000).</p>
 
-      <p class="mt2">I have <act>Edge Pan</act> disabled for years, and there are good reasons for it.</p>
+      <p class="mt2">I have <act>Edge Pan</act> disabled for years.</p>
 
       <img class="" src="assets/images/options/edgepan.jpg" alt=""> 
 
@@ -854,31 +879,40 @@
 
       <p class="mt2">Having <act>Edge Pan</act> disabled makes it easier to swing your cursor to the top edge of your screen without your camera moving in a disorienting way.</p>
 
-      <div class="separator mt2"></div>
+      <p class="mt2">
+        Now, I'm not <i>against</i> <act>Edge Pan</act>.<br>
+        I just don't use it.
+      </p>
+
+    </div>  
+
+
+    <div class="wrap-section-block">
+
+      <h2>Portrait Clicking</h2>
 
       <p class="mt2">Here's something very interesting.</p>
       
       <p class="mt2">You <b>can</b> use spells and items on <b>allies</b> via portrait clicks.</p>
-      <p>You <b>can't</b> use spells or items on <b>enemies</b>. That would be too ridiculous.</p>
-      <p class="mt2">What you can <b>also do</b> — is issue <act>Attack</act> commands.</p>
+      <p>You <b>can't</b> use spells or items on <b>enemies</b>. That would be ridiculous.</p>
+      <p class="mt2">What you <b>can also do</b> — is issue <act>Attack</act> commands.</p>
 
       <p class="mt2"><span class="red">Oversight?</span><br>
-        Not sure if intended: you <b>can</b> issue attack commands, but you <b>can't</b> "right click" top bar portraits (no effect).
+        Not sure if intended: you <b>can</b> issue attack commands, but you <b>can't</b> right-click top bar portraits (it selects).
       </p>
 
       <div class="separator mt2"></div>
 
-      <p class="mt2">"Attacking" an enemy hero <b>draws creep aggro</b>.</p>
-      <p>And you can draw creep aggro by "attacking" <b>any hero</b> — on any lane.</p>
+      <p class="mt2">Attacking an enemy hero <b>draws creep aggro</b>.</p>
+      <p>And you can draw creep aggro by issuing an attack on <b>any hero</b> — on any lane.</p>
 
-      <p class="mt2">This is obviously omega useful on<br>
+      <p class="mt2">This is obviously extremely useful on heroes that benefit from creeps attacking them:<br>
         <spell>Axe</spell><img class="heroicon" src="assets/images/heroicon/axe.jpg" alt=""> because of <spell>Counter Helix</spell><img class="heroicon" src="assets/images/spellicon/counterhelix.jpg" alt="">, <br>
         <spell>Timbersaw</spell><img class="heroicon" src="assets/images/heroicon/timbersaw.jpg" alt=""> because of <spell>Reactive Armor</spell><img class="heroicon" src="assets/images/spellicon/reactivearmor.jpg" alt=""> and <br>
         <spell>Legion Commander</spell><img class="heroicon" src="assets/images/heroicon/legioncommander.jpg" alt=""> because of <spell>Moment of Courage</spell><img class="heroicon" src="assets/images/spellicon/momentofcourage.jpg" alt="">.</p>
 
         <p class="mt2">
           Aggro manipulation is a very important mechanic in this game. <br>
-          But I digress.
         </p>
 
     </div>   
@@ -895,11 +929,11 @@
 
       <p class="mt2">You might want to use <act>Auto Attack: Always</act> in the early game for 'Cancel Spam' last hitting.</p>
 
-      <p class="mt2">I personally don't bother with it.</p>
+      <p><span class="smaller">I personally don't bother with it.</span></p>
 
       <img class="" src="assets/images/options/toggleautoattack.jpg" alt=""> 
 
-      <p>You definitely want to enable auto attack for illusion based heroes such as <spell>Phantom Lancer</spell><img class="heroicon" src="assets/images/heroicon/phantomlancer.jpg" alt=""> and <spell>Naga Siren</spell><img class="heroicon" src="assets/images/heroicon/nagasiren.jpg" alt="">, so that the illusions auto attack creeps.</p>
+      <p>You definitely want to enable auto attack for illusion based heroes such as <spell>Phantom Lancer</spell><img class="heroicon" src="assets/images/heroicon/phantomlancer.jpg" alt="">, <spell>Terrorblade</spell><img class="heroicon" src="assets/images/heroicon/terrorblade.jpg" alt=""> and <spell>Naga Siren</spell><img class="heroicon" src="assets/images/heroicon/nagasiren.jpg" alt="">, so that you and the illusions auto attack creeps.</p>
 
       <div class="separator mt2"></div>
 
