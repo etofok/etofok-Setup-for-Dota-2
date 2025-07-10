@@ -20,12 +20,27 @@
     <button class="logo" id="logo-navbar">ETOFOK</button>
     <div class="navbar-links">
       <a href="https://discord.gg/grmNuB5cWc" target="_blank">Discord</a>
-      <a href="https://www.donationalerts.com/r/etofok" target="_blank">Donate</a>
+      <a href="#" onclick="toggleDonatePanel(event)" target="_blank">Donate</a>
     </div>
   </nav>
   <!-- <a href="https://www.youtube.com/user/etofok?sub_confirmation=1" target="_blank">YouTube</a> -->
 
   <!-- Above the fold -->
+
+   <div id="donateOverlay" class="donate-overlay" onclick="toggleDonatePanel(event)">
+       <div class="donate-panel" onclick="event.stopPropagation()">
+           <a class="button" href="https://www.donationalerts.com/r/etofok" target="_blank">DonationAlerts</a>
+           <a href="https://www.donationalerts.com/r/etofok" target="_blank">
+               <img class="qr" src="assets/images/qr-code/QR-DonationAlerts-etofok.png" alt="DonationAlerts QR">
+           </a>
+
+           <a class="button" href="https://pay.cloudtips.ru/p/bcb15a55" target="_blank">CloudTips (Ru)</a>
+           <a href="https://pay.cloudtips.ru/p/bcb15a55" target="_blank">
+               <img class="qr" src="assets/images/qr-code/QR-CloudTips-etofok.png" alt="CloudTips QR">
+           </a>
+       </div>
+   </div>
+
   <span class="nocontextmenu">
 
   <div class="section-abovethefold"> 
