@@ -134,6 +134,7 @@
         <li><b>Quickbuy:</b> <kbd>Alt</kbd>+<kbd>2</kbd></li>
         <li><b>Courier Deliver:</b> <kbd>Alt</kbd>+<kbd>3</kbd></li>
         <li><b>Courier Burst:</b> <kbd>Alt</kbd>+<kbd>4</kbd></li>
+        <li><b>Courier Shield:</b> <kbd>Alt</kbd>+<kbd>5</kbd></li>
         <li><b>Buy Sticky:</b> <kbd>Y</kbd></li>      
 
         <div class="separator"></div>
@@ -338,22 +339,13 @@
 
       <div class="separator mt2"></div>
 
-      <p><br><span class="red">Important!</span><br><br>
-        While this illustrates my point, most likely, you still <b>want</b> a hotkey for your passive abilities.<br>
-        Reason?<br>
-        If you don't have a key bound to a skill, you have to assign points to abilities via mouse instead of assign points via <kbd>CTRL</kbd> + <kbd>Ability Key</kbd><br><br>
-        So keep this in mind.
-      </p>
-
-      <div class="separator mt2"></div>
-
       <p class="mt2">
-        <spell>Ogre Magi</spell><img class="heroicon" src="assets/images/heroicon/ogremagi.jpg" alt=""> has technically 6 Abilities.
+        Another example is <spell>Ogre Magi</spell><img class="heroicon" src="assets/images/heroicon/ogremagi.jpg" alt="">.
       </p>
 
       <p class="mt2">
-        But it's crucial to note, that <spell>Multicast</spell><img class="heroicon" src="assets/images/spellicon/multicast.jpg" alt=""> is a <i>passive</i>.<br>
-        <b>It doesn't need</b> a hotkey.
+        6 Abilities, but <spell>Multicast</spell><img class="heroicon" src="assets/images/spellicon/multicast.jpg" alt=""> is a <i>passive</i>.<br>
+        It can't be activated.<br>
       </p>
 
       <p class="mt2">
@@ -364,20 +356,25 @@
         Leave <spell>Bloodlust</spell><img class="heroicon" src="assets/images/spellicon/bloodlust.jpg" alt=""> on <kbd>E</kbd> and move <spell>Fire Shield</spell><img class="heroicon" src="assets/images/spellicon/fireshield.jpg" alt=""> to <kbd>R</kbd>.
       </p>
 
-      <img class="" src="assets/images/options/abilities-ogremagi-binds.jpg" alt=""> 
+      <img class="" src="assets/images/options/abilities-ogremagi-binds.jpg" alt="">
 
       <p>
-        This is much better, because both 'buff abilities' are next to each other and use great keys.
+        This is reasonable, because both of our 'buff abilities' are next to each other and use great keys.<br>
+        But this is not ideal, because...
       </p>
 
-      <p class="mt2">
-        <span class="smaller">I hope one day we'll be able to rearrange abilities on the HUD to make it visually coherent as well.</span>
+      <div class="separator mt2"></div>
+
+      <p><span class="red">Important!</span><br><br>
+        You still <b>want</b> a hotkey for your passive abilities:<br>
+        If you don't have a hotkey, you can't use <kbd>CTRL</kbd> + <kbd>Ability Key</kbd> to learn the ability.<br>
+        You don't need <i>a great</i> key, but you <b>do</b> need <i>a</i> key.
       </p>
 
       <div class="separator mt2"></div>
 
       <p class="mt2">
-        Let's try something with 6 active abilities:
+        Let's try something with 6 <i>active</i> buttons:
       </p>
 
       <img class="" src="assets/images/options/abilities-hoodwink-binds-01.jpg" alt=""> 
@@ -391,7 +388,7 @@
       </p>
 
       <p class="mt2">
-        Despite the fact that we have <act>Control Group 4</act> bound to <kbd>4</kbd>, it's still possible to use <kbd>4</kbd> as an ability key!
+        <span class="red">Important:</span> despite the fact that we have <act>Control Group 4</act> bound to <kbd>4</kbd>, it's still possible to use <kbd>4</kbd> as an ability key!
       </p>
       
       <p class="mt2">
@@ -403,7 +400,8 @@
       </p>
       
       <p class="mt2">
-        This means, <spell>Hoodwink</spell><img class="heroicon" src="assets/images/heroicon/hoodwink.jpg" alt=""> — among many — can get away with <b>0 control groups</b> and easily have a set up like this:
+        This means, <spell>Hoodwink</spell><img class="heroicon" src="assets/images/heroicon/hoodwink.jpg" alt=""> — among many — can get away with <b>0 control groups</b>.<br>
+        We can easily have a set up like this:
       </p>
 
       <img class="" src="assets/images/options/abilities-hoodwink-binds-02.jpg" alt=""> 
@@ -880,6 +878,7 @@
         <li><b>Quickbuy:</b> <kbd>Alt</kbd>+<kbd>2</kbd></li>
         <li><b>Courier Deliver:</b> <kbd>Alt</kbd>+<kbd>3</kbd></li>
         <li><b>Courier Burst:</b> <kbd>Alt</kbd>+<kbd>4</kbd></li>
+        <li><b>Courier Shield:</b> <kbd>Alt</kbd>+<kbd>5</kbd></li>
         <li><b>Buy Sticky:</b> <kbd>Y</kbd></li>      
       </ul>
 
@@ -911,9 +910,9 @@
 
       <div class="separator mt2"></div>      
              
-      <p>
-        <span class="red">Interesting finds and Limitations:</span><br><br>
-        A lot of keys don't work for <act>Courier Deliver</act> and <act>Courier Boost</act> while the 'Search' input element of <act>Shop</act> is in focus.
+      <p class="mt2">
+        <span class="red">Interesting finds and limitations:</span><br><br>
+        A lot of keys don't work for <act>Courier Deliver</act> and <act>Courier Boost</act> when the 'Search' input element of the <act>Shop</act> is in focus.
 
         <img class="" src="assets/images/options/options-shop-search-bar.jpg" alt="">
 
@@ -932,12 +931,13 @@
 
       <p class="mt2">
         This matters because we have to <b>close the shop window</b> before we can use these hotkeys.<br>
-        Alternatively, we can disable <act>Shop Search Gets Focus On Open</act>.<br>
-        I personally did the latter:
+        Alternatively, we can disable <act>Shop Search Gets Focus On Open</act>.
       </p>
 
-      <img class="" src="assets/images/options/options-shopsearchgetsfocusonopen.jpg" alt="">
-
+      <p class="mt2">
+        I personally did the latter:
+        <img class="" src="assets/images/options/options-shopsearchgetsfocusonopen.jpg" alt="">
+      </p>
 
     </div>
 
@@ -1098,26 +1098,18 @@
       </p>
 
       <p class="mt2">
-        I have <act>Edge Pan</act> disabled for years.
+        I <span class="smaller">personally</span> have <act>Edge Pan</act> disabled for years.
       </p>
 
       <img class="" src="assets/images/options/edgepan.jpg" alt=""> 
 
-      <p>
-        The main reason to keep <act>Edge Pan</act> disabled is for easier portrait clicks.
-      </p>
-
-      <p class="mt2">
-        In a chaotic fight it's <b>not easy</b> to target your important ally with <spell>Glimmer Cape</spell><img class="heroicon" src="assets/images/itemicon/glimmercape.jpg" alt="">, <spell>Decrepify</spell><img class="heroicon" src="assets/images/spellicon/decrepify.jpg" alt=""> or <spell>False Promise</spell><img class="heroicon" src="assets/images/spellicon/falsepromise.jpg" alt="">, which is often a matter of life and death.
-      </p>
-
-      <p class="mt2">
-        Having <act>Edge Pan</act> disabled makes it easier to swing your cursor to the top edge of your screen without your camera moving in a disorienting way.
-      </p>
-
       <p class="mt2">
         Now, I'm not <i>against</i> <act>Edge Pan</act>.<br>
         I just don't use it.
+      </p>
+
+      <p>
+        The main reason to keep <act>Edge Pan</act> disabled is for easier portrait clicks.
       </p>
 
     </div>  
@@ -1143,17 +1135,17 @@
 
       <p class="mt2">
         <span class="red">Oversight?</span><br>
-        Not sure if intended: you <b>can</b> issue attack commands, but you <b>can't</b> right-click top bar portraits (it selects).
+        Not sure if intended: you <b>can</b> <act>Attack</act> top bar portraits, but you <b>can't</b> <kbd>Right-click</kbd>.
       </p>
 
       <div class="separator mt2"></div>
 
       <p class="mt2">
         This is relevant, because attacking an enemy hero <b>draws creep aggro</b>.<br>
-        And you can draw creep aggro by issuing an attack on <b>any hero</b> — on any lane.
+        And you can draw creep aggro by using <act>Attack</act> hotkey on <b>any hero</b> — <b>on any lane</b>.
       </p>
 
-      <p class="mt2">This is obviously extremely useful on heroes that benefit from creeps attacking them:<br>
+      <p class="mt2">This is extremely useful on heroes that benefit from creeps attacking them:<br>
         <spell>Axe</spell><img class="heroicon" src="assets/images/heroicon/axe.jpg" alt=""> because of <spell>Counter Helix</spell><img class="heroicon" src="assets/images/spellicon/counterhelix.jpg" alt="">, <br>
       
         <spell>Timbersaw</spell><img class="heroicon" src="assets/images/heroicon/timbersaw.jpg" alt=""> because of <spell>Reactive Armor</spell><img class="heroicon" src="assets/images/spellicon/reactivearmor.jpg" alt=""> and <br>
@@ -1184,10 +1176,6 @@
       <img class="" src="assets/images/options/options-autoattack.jpg" alt=""> 
 
       <p class="mt2">
-        You might want to use <act>Auto Attack: Always</act> in the early game for 'Cancel Spam' last hitting. <span class="smaller">I personally don't bother with it.</span>
-      </p>
-
-      <p class="mt2">
         You definitely want to enable auto attack for illusion based heroes such as <spell>Phantom Lancer</spell><img class="heroicon" src="assets/images/heroicon/phantomlancer.jpg" alt="">, <spell>Terrorblade</spell><img class="heroicon" src="assets/images/heroicon/terrorblade.jpg" alt=""> and <spell>Naga Siren</spell><img class="heroicon" src="assets/images/heroicon/nagasiren.jpg" alt="">, so that you and the illusions auto attack creeps.
       </p>
 
@@ -1199,8 +1187,40 @@
 
       <img class="" src="assets/images/options/quickattackmove.jpg" alt=""> 
 
+      <p class="mt2">
+        You <i>might</i> want to use <act>Auto Attack: Always</act> for 'Cancel Hit' last hitting.<br>
+        But that's old.<br><br>
+        The newest tech for last-hits is to use the <act>Auto-repeat Right Mouse</act> instead.
+      </p>
+
     </div>    
 
+
+    <!-------->
+    <div class="wrap-section-block">
+
+      <h2>How to Last-Hit</h2>
+
+      <p class="mt2">
+        Step 1. Enable <act>Auto-repeat Right Mouse</act> and <act>Quick Attack</act>.
+      </p>
+
+      <img class="" src="assets/images/options/autorepeatmouse.jpg" alt=""> 
+      <img class="" src="assets/images/options/quickattackmove.jpg" alt="">
+
+      <p class="mt2">
+        Step 2. Press and hold your <act>Right-Click</act> or <act>Attack</act> on your target creep.
+      </p>
+
+      <p class="mt2">
+        Step 3. Spam your <act>Stop</act> command to cancel the animation.
+      </p>
+
+      <p class="mt4">
+        This way you can reliably last-hit every creep.
+      </p>
+
+    </div>    
 
     <!-------->
     <div class="wrap-section-block">
@@ -1305,7 +1325,7 @@
         Especially considering the kind of nicknames Dota 2 players have.
       </p>
       
-      <p class="mt2">It's an art form, and I will appreciate it in a lobby.</p>
+      <p class="mt2">Dota 2 nicknames is an art form, but I will appreciate it in a lobby.</p>
 
     </div>
 
