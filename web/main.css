@@ -30,6 +30,10 @@ img {
   margin-right: auto;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .red {
   color: red;
   font-weight:600;
@@ -97,12 +101,12 @@ img {
   vertical-align: middle;
 }
 
-h1 {
-  font-size: 3rem;
+.yellowheader {
+  font-size: 2rem;
   font-weight: 800;
   color: #FFD700;
-  margin-bottom: 0rem;
   margin-top: 2rem;
+  margin-bottom: 4rem;
   letter-spacing: -0.08em;
   text-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
 }
@@ -115,7 +119,7 @@ h4 {
   margin-top: 0rem;
 }
 
-h2 {
+h1 {
   font-size: 3.5rem;
   font-weight: 600;
   line-height: 1.2;
@@ -193,6 +197,16 @@ li {
   position: relative;
   overflow: hidden;
   flex-direction: column;
+}
+
+.section-abovethefold h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  color: #00CED1;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
 }
 
 .section-main {
