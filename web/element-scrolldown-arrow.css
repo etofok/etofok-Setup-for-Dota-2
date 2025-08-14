@@ -7,7 +7,6 @@
   border-left: 2px solid #777;
   border-bottom: 2px solid #777;
   animation: bounce 3.5s infinite;
-  cursor: pointer;
   margin-left: auto;  /* Push from the left */
   margin-right: auto; /* Push from the right */
   display: block;     /* Ensure it's a block-level element for margin auto to work */
