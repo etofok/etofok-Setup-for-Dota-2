@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+    document.querySelectorAll("img").forEach(img => {
+      if (!img.hasAttribute("loading")) {
+        img.setAttribute("loading", "lazy");
+      }
+    });
+
 
     /* remove context menu for .nocontextmenu elements */
     const nocontextmenus = document.querySelectorAll('.nocontextmenu');
@@ -29,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
        })
 
     });
+
+
+
 
 }); // DOMContentLoaded
 
