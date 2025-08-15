@@ -35,3 +35,21 @@
     lazySections.forEach(section => observer.observe(section));
     
 })();
+
+
+function loadLazySection(el) {
+    const url = el.dataset.src;
+    if (!url) return;
+
+    fetch(url)
+        .then(res => {
+            if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
+            return res.text();
+        })
+        .then(html => {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = html;
+            el.replaceWith(...tempDiv.childNodes);
+        })
+        .catch(err => console.error(`Failed to load ${url}:`, err));
+}
