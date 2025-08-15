@@ -1,3 +1,11 @@
-/CustomKeys
-/testimonials
 /web/assets/images/unused
+/web/node_modules
+/web/package.json
+/web/package-lock.json
+/web/gulpfile.js
+.gitattributes
+.gitignore
+.git
+
+
+
