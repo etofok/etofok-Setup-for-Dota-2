@@ -3,9 +3,7 @@
 /web/package.json
 /web/package-lock.json
 /web/gulpfile.js
-.gitattributes
-.gitignore
-.git
-
-
+/web/index-dev.html
+/web/css/
+/web/js/
 
