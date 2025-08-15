@@ -1,4 +1,4 @@
-  document.addEventListener("DOMContentLoaded", () => {
+(() => {
     const lazySections = document.querySelectorAll(".lazy-section");
 
     const observer = new IntersectionObserver((entries, obs) => {
@@ -17,8 +17,8 @@
               })
               .then(html => {
                 el.innerHTML = html;
-                el.classList.add("loaded"); // optional styling hook
-                obs.unobserve(el); // stop observing after load
+                el.classList.add("loaded");
+                obs.unobserve(el);
               })
               .catch(err => {
                 console.error(`Error loading ${src}:`, err);
@@ -28,9 +28,10 @@
         }
       });
     }, {
-      rootMargin: "500px", // start loading before entering viewport
+      rootMargin: "400px",
       threshold: 0.1
     });
 
     lazySections.forEach(section => observer.observe(section));
-  });
+    
+})();

@@ -18,210 +18,79 @@
   <meta name="keywords" content="Dota 2, hotkeys, keybinds, layout, advanced, setup, guide, etofok, performance, intuitive, controls, customization, pro, efficient, ergonomical, wrist, finger, action keys, muscle memory">
   <meta name="robots" content="index, follow" />
   <meta name="author"         content="etofok" />
-</head>
-<body>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="element-scrolldown-arrow.css">
+</head>
 
-  <nav class="navbar">
-    <button class="logo" id="logo-navbar">ETOFOK</button>
-    <div class="navbar-links">
-      <a href="https://discord.gg/grmNuB5cWc" target="_blank">Discord</a>
-      <a href="#" onclick="toggleDonatePanel(event)" target="_blank">Donate</a>
-    </div>
-  </nav>
-  <!-- <a href="https://www.youtube.com/user/etofok?sub_confirmation=1" target="_blank">YouTube</a> -->
+<body>
 
-  <!-- Above the fold -->
+  <header>
+    <nav class="navbar">
+      <button class="logo" id="logo-navbar">ETOFOK</button>
+      <div class="navbar-links">
+        <a href="https://discord.gg/grmNuB5cWc" target="_blank">Discord</a>
+        <a href="#" onclick="toggleDonatePanel(event)" target="_blank">Donate</a>
+      </div>
+    </nav>
+  </header>
 
-   <div id="donateOverlay" class="donate-overlay" onclick="toggleDonatePanel(event)">
-       <div class="donate-panel" onclick="event.stopPropagation()">
-           <a class="button" href="https://www.donationalerts.com/r/etofok" target="_blank">DonationAlerts</a>
-           <a href="https://www.donationalerts.com/r/etofok" target="_blank">
-               <img class="qr" src="assets/images/qr-code/QR-DonationAlerts-etofok.png" alt="DonationAlerts QR">
-           </a>
-
-           <a class="button" href="https://pay.cloudtips.ru/p/bcb15a55" target="_blank">CloudTips (Ru)</a>
-           <a href="https://pay.cloudtips.ru/p/bcb15a55" target="_blank">
-               <img class="qr" src="assets/images/qr-code/QR-CloudTips-etofok.png" alt="CloudTips QR">
-           </a>
-       </div>
-   </div>
-
-  <div class="section-abovethefold"> 
+  <main class="section-main">
 
     <span class="scroll-nagivation" id="scroll-to-top"></span>
 
-    <div class="yellowheader">ETOFOK</div>
-    <h1>etofok Dota 2 hotkeys: <br> Advanced settings and keyboard binds</h1>
+    <h1>etofok Dota 2 hotkeys <br> Advanced settings and keyboard binds</h1>
 
-   <!-- --- --- --- -->
-    <div class="wrap-section-block radiant">
+    <p>please grab a cup of coffee...</p>
 
-      <h2>Preface</h2>
-
-      <p>A layout should make sense — visually and mechanically.</p>
-
-      <p>The more intuitive it is, the easier it is to use, the fewer mistakes you’ll make, and the faster you’ll be able to execute your decisions.</p>
-      
-      <p class="mt2">Even if your decisions aren’t great, at least your execution won’t be the limiting factor.</p>
-
-      <p class="mt2">Think about it: the layout is <b>the only way</b> to interact with the game. That's why it's extremely important to have a great one. It has to feel like an extension of your mind.</p>
-
-      <p class="mt2">On this page, you’ll find a detailed explanation of the etofok layout for Dota 2. I don't have a fancy name for it, but in my opinion this is the best Dota 2 hotkey layout and settings possible. In my opinion. It’s what I personally use, though you don’t have to.</p>
-  
-      <p class="mt2">I’ll present the hotkeys first, and then explain the reasoning behind each decision for every hotkey and every in-game setting. I promise this isn’t your typical guide.</p>
-
-      <p class="mt2">Expected Read Time — 2 hours.</p>
-      <p style="font-size: 10px;">This is what advanced looks like.</p>
-
-    </div>
-
-    <div class="scrolldown-arrow" id="scroll-arrow-"></div>
-
-  </div>
-
-
-  <div class="section-main">
-
-    <span class="scroll-nagivation" id="scroll-to-layout"></span>
-
-    <div class="wrap-section-block">
-
-      <h2>Hotkeys Overview</h2>
-
-      <ul>
-
-        <li><b>Abilities 1-4:</b> <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> </li>
-        <li><b>Abilities (Self):</b> <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> + <kbmod>Alt</kbmod></li>
-        <li><b>Abilities (Learn):</b> <kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> + <kbmod>Ctrl</kbmod></li>
-        <li><b>Ability 5 & 6:</b> <kbd>Wildcard</kbd></li>
-        
-        <div class="separator"></div>
-
-        <li><b>Items:</b> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd></li>
-        <li><b>Items (Self):</b> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd> + <kbmod>Alt</kbmod></li>
-
-        <div class="separator"></div>
-        <li><b>Neutral:</b> <kbd>V</kbd></li>
-        <li><b>Neutral (Self):</b> <kbd>V</kbd> + <kbmod>Alt</kbmod></li>
-
-        <div class="separator"></div>
-
-        <li><b>Teleport Scroll:</b> <kbd>G</kbd></li>
-        <li><b>Teleport Base:</b> <kbd>G</kbd> + <kbmod>Alt</kbmod></li>        
-
-        <div class="separator"></div>
-
-        <li><b>Attack:</b> <kbd>Spacebar</kbd></li>
-        <li><b>Stop:</b> <kbd>F</kbd></li>
-        <li><b>Directional Move:</b> <kbd>CapsLock</kbd></li>
-
-        <div class="separator"></div>
-
-        <li><b>Select Group 1:</b> <kbd>1</kbd></li>
-        <li><b>Select Group 2:</b> <kbd>2</kbd></li>
-        <li><b>Select Group 3:</b> <kbd>3</kbd></li>
-        <li><b>Select Group 4:</b> <kbd>4</kbd></li>
-
-        <div class="separator"></div>
-
-        <li><b>Select Hero:</b> <kbd>WheelUp</kbd></li>
-        <li><b>Select All Other Units:</b> <kbd>WheelDown</kbd> </li>
-        <li><b>Select All Units:</b> <kbd>WheelDown</kbd> + <kbmod>Alt</kbmod></li>
-        <li><b>Unified Orders:</b> <kbd>Ctrl</kbd></li>
-
-        <div class="separator"></div>
-
-        <li><b>Select Courier:</b> <kbd>F1</kbd></li>
-        <li><b>Open Shop:</b> <kbd>Alt</kbd>+<kbd>1</kbd></li>
-        <li><b>Quickbuy:</b> <kbd>Alt</kbd>+<kbd>2</kbd></li>
-        <li><b>Courier Deliver:</b> <kbd>Alt</kbd>+<kbd>3</kbd></li>
-        <li><b>Courier Burst:</b> <kbd>Alt</kbd>+<kbd>4</kbd></li>
-        <li><b>Courier Shield:</b> <kbd>Alt</kbd>+<kbd>5</kbd></li>
-        <li><b>Buy Sticky:</b> <kbd>Y</kbd></li>      
-
-        <div class="separator"></div>
-
-        <li><b>Talents:</b> <kbd>`</kbd></li>
-        <li><b>Left Talent:</b> <kbd>1</kbd></li>
-        <li><b>Right Talent:</b> <kbd>2</kbd></li>
-
-        <div class="separator"></div>
-
-        <li><b>Chat Wheel 1:</b> <kbd>F2</kbd></li>
-        <li><b>Chat Wheel 2:</b> <kbd>F2</kbd>+<kbd>Alt</kbd></li>
-
-      </ul>
-    </div>
-
-    <!-- --- --- --- -->
-
-    <div class="lazy-section" data-src="section-1-alt-modifier.html" data-section="section-1-alt-modifier"></div>
-    <div class="lazy-section" data-src="section-2-control-groups.html" data-section="section-2-control-groups"></div>
-    <div class="lazy-section" data-src="section-3-abilities.html" data-section="section-3-abilities"></div>
-    <div class="lazy-section" data-src="section-4-abilities-quickcast.html" data-section="section-4-abilities-quickcast"></div>
-    <div class="lazy-section" data-src="section-5-abilities-toggle-autocast.html" data-section="section-5-abilities-toggle-autocast"></div>
-    <div class="lazy-section" data-src="section-6-abilities-5-and-6.html" data-section="section-6-abilities-5-and-6"></div>
-    <div class="lazy-section" data-src="section-7-abilities-no-target.html" data-section="section-7-abilities-no-target"></div>
-    <div class="lazy-section" data-src="section-8-items.html" data-section="section-8-items"></div>
-    <div class="lazy-section" data-src="section-9-items-per-item-quickcast.html" data-section="section-9-items-per-item-quickcast"></div>
-    <div class="lazy-section" data-src="section-10-items-problem-with-quickcast.html" data-section="section-10-items-problem-with-quickcast"></div>
-
-    <div class="lazy-section" data-src="section-11-items-neutral.html" data-section="section-11-items-neutral"></div>
-    <div class="lazy-section" data-src="section-12-items-teleport-scroll.html" data-section="section-12-items-teleport-scroll"></div>
-    <div class="lazy-section" data-src="section-13-command-attack-stop.html" data-section="section-13-command-attack-stop"></div>
-    <div class="lazy-section" data-src="section-14-command-directional-move.html" data-section="section-14-command-directional-move"></div>
-    <div class="lazy-section" data-src="section-15-command-talent-upgrade.html" data-section="section-15-command-talent-upgrade"></div>
-
-    <div class="lazy-section" data-src="section-16-command-select-unit-advanced.html" data-section="section-16-command-select-unit-advanced"></div>
-    <div class="lazy-section" data-src="section-17-shop-and-courier.html" data-section="section-17-shop-and-courier"></div>
-    <div class="lazy-section" data-src="section-18-chat-wheel.html" data-section="section-18-chat-wheel"></div>
-    <div class="lazy-section" data-src="section-19-camera.html" data-section="section-19-camera"></div>
-    <div class="lazy-section" data-src="section-20-portrait-clicking.html" data-section="section-20-portrait-clicking"></div>
-
-    <div class="lazy-section" data-src="section-21-auto-attack.html" data-section="section-21-auto-attack"></div>
-    <div class="lazy-section" data-src="section-22-how-to-last-hit.html" data-section="section-22-how-to-last-hit"></div>
-    <div class="lazy-section" data-src="section-23-abilities-require-cancel.html" data-section="section-23-abilities-require-cancel"></div>
-    <div class="lazy-section" data-src="section-24-minimap.html" data-section="section-24-minimap"></div>
-    <div class="lazy-section" data-src="section-25-healbars-audio.html" data-section="section-25-healbars-audio"></div>
-
-    <div class="lazy-section" data-src="section-26-labs.html" data-section="section-26-labs"></div>
-    <div class="lazy-section" data-src="section-27-mouse-buttons.html" data-section="section-27-mouse-buttons"></div>
-    <div class="lazy-section" data-src="section-28-microphone.html" data-section="section-28-microphone"></div>
-    <div class="lazy-section" data-src="section-28-microphone.html" data-section="section-28-microphone"></div>
-    <div class="lazy-section" data-src="section-29-unused-keys.html" data-section="section-29-unused-keys.html"></div>
-    <div class="lazy-section" data-src="section-30-all-options-in-screenshots.html" data-section="section-30-all-options-in-screenshots"></div>
-
-    <div class="lazy-section" data-src="section-31-closure.html" data-section="section-31-closure"></div>
+    <div class="lazy-section" data-src="html/section-00-preface.html" data-section="section-00-preface"></div>
+    <div class="lazy-section" data-src="html/section-0-hotkeys-overview.html" data-section="section-0-hotkeys-overview"></div>
+    <div class="lazy-section" data-src="html/section-1-alt-modifier.html" data-section="section-1-alt-modifier"></div>
+    <div class="lazy-section" data-src="html/section-2-control-groups.html" data-section="section-2-control-groups"></div>
+    <div class="lazy-section" data-src="html/section-3-abilities.html" data-section="section-3-abilities"></div>
+    <div class="lazy-section" data-src="html/section-4-abilities-quickcast.html" data-section="section-4-abilities-quickcast"></div>
+    <div class="lazy-section" data-src="html/section-5-abilities-toggle-autocast.html" data-section="section-5-abilities-toggle-autocast"></div>
+    <div class="lazy-section" data-src="html/section-6-abilities-5-and-6.html" data-section="section-6-abilities-5-and-6"></div>
+    <div class="lazy-section" data-src="html/section-7-abilities-no-target.html" data-section="section-7-abilities-no-target"></div>
+    <div class="lazy-section" data-src="html/section-8-items.html" data-section="section-8-items"></div>
+    <div class="lazy-section" data-src="html/section-9-items-per-item-quickcast.html" data-section="section-9-items-per-item-quickcast"></div>
+    <div class="lazy-section" data-src="html/section-10-items-problem-with-quickcast.html" data-section="section-10-items-problem-with-quickcast"></div>
+    <div class="lazy-section" data-src="html/section-11-items-neutral.html" data-section="section-11-items-neutral"></div>
+    <div class="lazy-section" data-src="html/section-12-items-teleport-scroll.html" data-section="section-12-items-teleport-scroll"></div>
+    <div class="lazy-section" data-src="html/section-13-command-attack-stop.html" data-section="section-13-command-attack-stop"></div>
+    <div class="lazy-section" data-src="html/section-14-command-directional-move.html" data-section="section-14-command-directional-move"></div>
+    <div class="lazy-section" data-src="html/section-15-command-talent-upgrade.html" data-section="section-15-command-talent-upgrade"></div>
+    <div class="lazy-section" data-src="html/section-16-command-select-unit-advanced.html" data-section="section-16-command-select-unit-advanced"></div>
+    <div class="lazy-section" data-src="html/section-17-shop-and-courier.html" data-section="section-17-shop-and-courier"></div>
+    <div class="lazy-section" data-src="html/section-18-chat-wheel.html" data-section="section-18-chat-wheel"></div>
+    <div class="lazy-section" data-src="html/section-19-camera.html" data-section="section-19-camera"></div>
+    <div class="lazy-section" data-src="html/section-20-portrait-clicking.html" data-section="section-20-portrait-clicking"></div>
+    <div class="lazy-section" data-src="html/section-21-auto-attack.html" data-section="section-21-auto-attack"></div>
+    <div class="lazy-section" data-src="html/section-22-how-to-last-hit.html" data-section="section-22-how-to-last-hit"></div>
+    <div class="lazy-section" data-src="html/section-23-abilities-require-cancel.html" data-section="section-23-abilities-require-cancel"></div>
+    <div class="lazy-section" data-src="html/section-24-minimap.html" data-section="section-24-minimap"></div>
+    <div class="lazy-section" data-src="html/section-25-healbars-audio.html" data-section="section-25-healbars-audio"></div>
+    <div class="lazy-section" data-src="html/section-26-labs.html" data-section="section-26-labs"></div>
+    <div class="lazy-section" data-src="html/section-27-mouse-buttons.html" data-section="section-27-mouse-buttons"></div>
+    <div class="lazy-section" data-src="html/section-28-microphone.html" data-section="section-28-microphone"></div>
+    <div class="lazy-section" data-src="html/section-29-unused-keys.html" data-section="section-29-unused-keys.html"></div>
+    <div class="lazy-section" data-src="html/section-30-all-options-in-screenshots.html" data-section="section-30-all-options-in-screenshots"></div>
+    <div class="lazy-section" data-src="html/section-31-closure.html" data-section="section-31-closure"></div>
 
 
-    <!-------->
+  </main>
 
+  <footer>
+    <div class="lazy-section" data-src="html/section-footer.html" data-section="section-footer"></div>
+  </footer>
 
+  <div class="lazy-section" data-src="html/section-panel-donate.html" data-section="section-panel-donate"></div>
 
-    <!-------->
-
-
-  </div>   <!-- section-main -->
-
-
-  <div class="section-read-footer">
-
-    <p>written and produced by <a href="https://linktr.ee/etofok" target="_blank">etofok</a> June 20, 2025</p>
-
-    <p>etofok is not affiliated with or endorsed by Valve. All relevant trademarks belong to their respective owners.</p>
-
-  </div>
-
-  <script src="main.js"></script>
-  <script src="navbar.js"></script>
-  <script src="element-scrolldown-arrow.js"></script>
-  <script src="lazy-loading.js"></script>
+  <script src="main.js" defer></script>
+  <script src="navbar.js" defer></script>
+  <script src="element-scrolldown-arrow.js" defer></script>
+  <script src="lazy-loading.js" defer></script>
 
 </body>
 </html>

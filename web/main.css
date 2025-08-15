@@ -16,18 +16,19 @@ body {
   background-color: #121212;
   color: #E0E0E0;
   overflow-x: hidden;
+  font-family: Inter;
 }
 
-
 img {
+  display: flex;
   border: 1px solid #333333;
-  box-shadow: inset 0 -0.5rem 0.5rem -0.5rem rgba(110, 110, 110, 0.5);
   border-radius: 5px;
-  margin-top: 4rem;
+  box-shadow: inset 0 -0.5rem 0.5rem -0.5rem rgba(110, 110, 110, 0.5);
+  margin-top: 4em;
   margin-bottom: 4rem;
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
 }
 
 .nowrap {
@@ -35,7 +36,7 @@ img {
 }
 
 .red {
-  color: red;
+  color:red;
   font-weight:600;
 }
 
@@ -46,46 +47,46 @@ img {
 .magnifiable {
   cursor: zoom-in;
   transition: transform 0.2s ease-in-out;
+  width: inherit;
 }
 
 .magnifiable:hover {
     transform: scale(1.02);
 }
 
-/* --- Overlay Styles --- */
 .magnify-overlay {
-    position: fixed; /* Stays in place relative to the viewport */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-    display: flex; /* Use flexbox to center the image */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    z-index: 1000; /* Ensure it's on top of other content */
-    opacity: 0; /* Start hidden for fade-in effect */
-    visibility: hidden; /* Start hidden for fade-in effect */
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Fade-in animation */
-    cursor: zoom-out; /* Cursor for closing the overlay */
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    cursor: zoom-out;
 }
 
 .magnify-overlay.active {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .magnify-overlay img {
-    max-width: 90%; /* Prevent image from overflowing on large screens */
-    max-height: 90%; /* Prevent image from overflowing on large screens */
-    object-fit: contain; /* Ensures the whole image is visible without cropping */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Optional: Add a shadow to the image */
-    transform: scale(0.8); /* Start smaller for zoom-in effect */
-    transition: transform 0.3s ease-out; /* Zoom-in animation */
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  transform: scale(0.8);
+  transition: transform 0.3s ease-out;
 }
 
 .magnify-overlay.active img {
-    transform: scale(1); /* Zoom to actual size */
+    transform: scale(1);
 }
 
 .heroicon {
@@ -95,126 +96,32 @@ img {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   height: 36px;
-
   margin-top: 0;
   margin-bottom: 0;
   vertical-align: middle;
 }
 
-.yellowheader {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #FFD700;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  letter-spacing: -0.08em;
-  text-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
-}
-
 .lazy-section {
-  min-height: 600px;
+  min-height: 400px;
 }
 
-h4 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #BDBDBD;
-  margin-bottom: 2rem;
-  margin-top: 0rem;
-}
-
-h3 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 1.25em;
-  color: #FFD700;
-  border-bottom: 1px solid #333333;
-  padding-bottom: 0.75em;
-}
-
-ol,
-ul {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  text-align: left;
-  padding-left: 2rem;
-}
-
-ol {
-  list-style-position: inside;
-}
-
-li {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  text-align: left;
-  color: #E0E0E0;
-}
-
-.centered {
-  margin: 0 auto;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.textunderneath {
-  display: block;
-  margin-top: 0;
-  text-align: center;
-  font-size: 1rem;
-  color: #00CED1;
-}
-
-.padded {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-}
-
-.cuteborder {
-  border: 1px solid #FFD700;
-  box-sizing: border-box;
-}
-
-.section-abovethefold {
-  background: linear-gradient(to bottom, #121212, #212121);
-  text-align: center;
-  width: 100%;
-  padding-top: 0em;
-  padding-bottom: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40vh;
-  position: relative;
-  overflow: hidden;
-  flex-direction: column;
-}
-
-.section-abovethefold h1 {
-  font-size: 3.5rem;
+h1 {
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.2;
-  color: #00CED1;
-  margin-bottom: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 10rem;
+  margin-top: 15rem;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.section-main {
-  margin: 0 auto;
-  padding: 3rem 0;
+main {
+  margin: 0 0;
+  padding: 0 0;
   text-align: center;
   background: linear-gradient(to bottom, #121212, #212121);
   box-shadow: inset 0 -0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
-}
-
-.section-main h1 {
-  font-size: 1.75em;
-  font-weight: 500;
-  color: #F5F5F5;
 }
 
 .wrap-section-block {
@@ -224,38 +131,20 @@ li {
     radial-gradient(circle at top center, rgba(155, 155, 155, 0.15) 0%, transparent 25rem),
     linear-gradient(to bottom, #151515, #101010);
   background-repeat: no-repeat;
-  font-size: 1.1em;
   margin: 2rem auto;
   margin-bottom: 5rem;
   width: calc(100% - 2%);
-  max-width: 800px;
-  padding: 2em;
+  max-width: 1000px;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 3em;
   border: 1px solid #333333;
   border-radius: 4rem;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
-  vertical-align: baseline;
   box-shadow:
     0 0.2rem 0.5rem rgba(0, 0, 0, 0.9),
     0 1rem 1.5rem -0.5rem rgba(0, 0, 0, 0.9);
-}
-
-
-.wrap-section-block .radiant {
-
-}
-
-.wrap-section-block p {
-  line-height: 2em;
-  color: #fDFdfD;
-  display: block;
-  align-items: baseline;
-  text-align: left;
-  vertical-align: baseline;
-  flex: 0 0 190px;
-  font-size: 1.1rem;
-  margin-bottom: 0rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .wrap-section-block h2 {
@@ -268,18 +157,30 @@ li {
   padding-bottom: 0.75em;
 }
 
+.wrap-section-block p {
+  display: block;
+  line-height: 2em;
+  color: #fDFdfD;
+  align-items: baseline;
+  text-align: left;
+  vertical-align: baseline;
+  flex: 0 0 190px;
+  font-size: 1.1rem;
+}
+
 .wrap-section-block ul {
-    display: block;
-    list-style-type: none;
-    padding: 5%;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    border: 1px solid #33333333;
-    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    overflow: hidden;
-    width: calc(100% - 1%);
-    background-color: #181818;
+  display: block;
+  list-style-type: none;
+  padding: 5%;
+  border: 1px solid #33333333;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  width: calc(100% - 1%);
+  background-color: #181818;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .wrap-section-block li {
@@ -288,11 +189,11 @@ li {
   color: #fDFdfD;
   display: flex;
   align-items: baseline;
+  text-align: left;
 }
 
 .wrap-section-block li b {
   font-weight: 700;
-  color: #F5F5F5;
   flex: 0 0 220px;
 }
 
@@ -303,6 +204,7 @@ li {
   margin-left: 0;
 }
 
+
 :root kbd,
 :root kbmod,
 :root spell,
@@ -312,22 +214,14 @@ li {
   padding: 0.5em 0.7em;
   margin-left: 0.1rem;
   margin-right: 0.1rem;
-  margin-bottom: 3px;
   font-family: monospace;
-  font-size: 0.9em;
-  line-height: 1.2;
+  line-height: 1.1;
   box-shadow:
     0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5),
     inset 0 0.05rem 0.1rem rgba(255, 255, 255, 0.1);
-  background-color: #3a3a3a;
-  border: 1px solid #222;
-  color: #00CED1;
-  text-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.4);
   vertical-align: middle;
-  background-image: linear-gradient(to bottom, #3a3a3a 0%, #444 50%, #3a3a3a 100%)
-  touch-action: manipulation;
+  font-size: 18px;
 }
-
 
 :root kbd {
   background-color: #161616;
@@ -386,40 +280,34 @@ li {
   cursor: pointer;
 }
 
+
 @media (max-width: 600px) {
 
    :root kbd,
    :root kbmod,
+   :root spell,
    :root act {
-      margin-left: 0.15rem;
-      margin-right: 0.15rem;
+      font-size: 14px;
     }   
 
-    .section-abovethefold h1 {
-      font-size: 2.5rem;
+    h1 {
+      font-size: 2rem;
+      margin-top: 5em;
     }
-    .section-abovethefold h2 {
-      font-size: 2.5rem;
-    }
-    .section-abovethefold h3 {
-    }
-    .section-abovethefold h4 {
-      font-size: 1rem;
-    }
-
 
     .wrap-section-block {
         overflow: hidden;
         padding-left: 2%;
         padding-right: 2%;
-        font-size: 1rem;
+        padding-top: 2em;
+        font-size: 0.9rem;
     }
 
     .wrap-section-block p {
         overflow: hidden;
-        padding-left: 5%;
-        padding-right: 5%;
-        font-size: 1rem;
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+        font-size: 14px;
         margin-bottom: 1rem;
     } 
 
@@ -428,12 +316,12 @@ li {
     } 
 
     .wrap-section-block ul {
-        overflow: hidden;
+        overflow: scroll;
     }
 
     .wrap-section-block li b {
       flex: 0 0 45%;
-      font-size: 1rem;
+      font-size: 14px;
     }
 
     img {
@@ -443,66 +331,15 @@ li {
 
 }
 
-.section-read-footer {
+footer {
   font-size: 0.9em;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 0;
   padding: 1.5em;
   color: #BDBDBD;
   background-color: #121212;
   box-shadow: inset 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
   border-top: 1px solid #333333;
-}
-
-.cta-button-one {
-  font-family: "Helvetica", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 700;
-  width: 18rem;
-  height: 6rem;
-  margin: 2rem;
-  padding: 1.5rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 0.5rem;
-  background-position: 0 90%;
-  background-size: 4px 3px;
-  box-shadow: rgba(0, 0, 0, 0.3) 1rem 2rem 1rem -1rem;
-  box-sizing: border-box;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.cta-button-one {
-  background-color: #FFD700;
-  color: #121212;
-}
-
-.cta-button-one:hover {
-  color: #121212;
-  transform: translate3d(0, 0.125rem, 0);
-  background-color: #B8860B;
-  box-shadow: rgba(0, 0, 0, 0.3) 0.5rem 0.5rem 0.5rem -1rem;
-}
-
-.cta-button-one:focus {
-  box-shadow: rgba(0, 0, 0, 0.3) 0.5rem 0.5rem 0.5rem -1rem;
-  outline: none;
-}
-
-.color_youtube {
-  background-color: #FF0000;
-}
-
-.color_twitch {
-  background-color: #9146FF;
 }
 
 .separator {
