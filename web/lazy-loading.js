@@ -28,7 +28,7 @@
         }
       });
     }, {
-      rootMargin: "400px",
+      rootMargin: "600px",
       threshold: 0.1
     });
 
