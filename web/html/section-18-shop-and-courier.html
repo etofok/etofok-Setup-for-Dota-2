@@ -4,7 +4,7 @@
 
       <p class="mt2">
         There are many different configurations for all-things-shop.<br>
-        This is what I'm currently using.<br>
+        Here's the simplest way to go about it.<br>
       </p>
 
       <ul>
@@ -18,7 +18,7 @@
       </ul>
 
       <p class="mt2">
-        In any case, <b>you want</b> the following pattern to be easy:<br>
+        In any case, you want the following pattern to be easy:<br>
         <act>QuickBuy</act> → <act>Courier Deliver</act> → <act>Courier Boost</act>
       </p>
 
@@ -36,35 +36,38 @@
         This action used to be much more useful, before we weren't getting free <span class="nowrap"><spell>Teleport Scrolls</spell><img class="heroicon" src="assets/images/itemicon/teleportscroll.jpg" alt=""></span> on deaths.
       </p>
       
-       <div class="separator mt2"></div>      
-             
-      <p class="mt2">
-        <span class="red">Interesting finds and limitations:</span><br><br>
-        A lot of keys don't work for <act>Courier Deliver</act> and <act>Courier Boost</act> when the 'Search' input element of the <act>Shop</act> is in focus:
-
-        <img class="" src="assets/images/options/options-shop-search-bar.jpg" alt="">
-
-        For example, numbers (<kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> ...) go into the 'Search' bar as text:<br><br>
-
-        <img class="" src="assets/images/options/options-shop-number-2.jpg" alt="">
-
-        <img class="" src="assets/images/options/options-shop-number-7.jpg" alt="">
-      </p>
-
-       <span class="smaller">No idea why "7" filters out Hurricane Pike and Dragon Lance</span>
+      <div class="separator mt2"></div>     
 
       <p class="mt2">
-        However, there is no reason for keys like <kbd>F1</kbd><kbd>F2</kbd><kbd>F3</kbd> (or their <kbd>Alt</kbd> counterparts) to behave this way. But they do. 
-      </p>
-
-      <p class="mt2">
-        This matters because we have to <b>close the shop window</b> to use these keys.<br>
-        Alternatively, we can disable <act>Shop Search Gets Focus On Open</act>.
-      </p>
-
-      <p class="mt2">
-        I personally disabled it:
         <img class="" src="assets/images/options/options-shopsearchgetsfocusonopen.jpg" alt="">
+        Uncheck these options:<br>
+          <act>Shop Always Uses Hotkeys</act><br>
+          <act>Shop Search Gets Focus On Open</act><br>
+          <act>Enable Simple Shop</act>
       </p>
+
+      <p class="mt2">
+        A lot of keys don't work with <act>Shop Search Gets Focus On Open</act> enabled.<br>
+        That makes sense, because the keys go straight into the search bar.<br>
+        The worst part: it blocks the keys that can't even be typed, like <kbd>F1</kbd> or <kbd>Alt</kbd> + <kbd>F1</kbd>.<br>
+      </p>
+
+      <p class="mt2">
+        I prefer my hotkeys working all the time, thank you.
+      </p>
+
+      <div class="separator mt2"></div>     
+
+      <p class="mt2">
+        <b>Fun fact!</b><br><br>
+        - "&" filters out Sange and Yasha, Kaya and Sange, Yasha and Kaya<br>
+        - "1" filters out Diffusal Blade, Dagon 1 and Disperser<br>
+        - "2" filters out Boots of Travel 2, Dagon 2<br>
+        - "/" filters out Hurricane Pike, Dragon Lance, Kaya and Sange<br>
+        - "(", ")" filters out Phase Boots, Power Threads<br>
+        - "7", "#", "=", "<", ">" filters out Hurricane Pike and Dragon Lance
+      </p>
+
+      <img class="" src="assets/images/options/options-shop-number-7.jpg" alt="">
 
     </div>
