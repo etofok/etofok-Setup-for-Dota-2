@@ -4,7 +4,7 @@
 
   <p>I see no reason to use anything else but this.</p>
   
-  <img class="magnifiable" src="assets/images/options/options-healthbars.jpg" alt=""> 
+  <img class="magnifiable" src="assets/images/options/options-healthbars.jpg" alt="">
 
   <p>
     Why would I need everyone's nicknames cluttering my screen?<br>
@@ -13,6 +13,99 @@
   
   <p class="mt2">Dota 2 nicknames is an art form, but I will appreciate it in a lobby.</p>
   
+
+  <div class="separator mt2"></div>
+  
+  <p class="mt2">
+    <span class="green">Healthbar Notches</span>
+  </p>
+
+  <p class="mt2">
+    See these vertical 'notches' on the healthbar?
+
+    <img class="magnifiable" src="assets/images/options/options-healthbars-notch-01.jpg" alt="">
+
+    Every notch represents 250 health points.<br><br>
+
+    There used to be a way to change how 'big' a notch was.<br>
+    But seems like it no longer works.
+  </p>
+
+  <ul>
+    <li>dota_health_per_vertical_marker 250</li>
+  </ul>
+
+  <p class="mt2">
+    However, if you don't like the notches <span class="smaller">(for some reason)</span> you can remove them.
+  </p>
+
+  <img class="magnifiable" src="assets/images/options/options-healthbars-notch-02.jpg" alt="">
+
+  <ul>
+    <li>dota_hud_healthbars 0 — no healthbars (for making videos)</li>
+    <li>dota_hud_healthbars 1 — simple healthbars for everyone</li>
+    <li>dota_hud_healthbars 2 — simple healthbars for enemies only</li>
+    <li>dota_hud_healthbars 3 — notched healthbars for everyone</li>
+  </ul>
+
+  <div class="separator mt2"></div>
+
+  <p class="mt2">
+    <span class="green">Hurt indicator</span>
+  </p>
+
+  <p class="mt2">
+    When a hero is hurt you can see the white flash that indicates how much damage it took.<br><br>
+
+    <video class="vid centered" autoplay muted preload="auto" loop playsinline poster="">
+    <source type="video/mp4" src="assets/images/options/options-healthbars-hurt.mp4">
+    </video>
+  </p>
+
+  <p class="mt2">
+    And we can modify it.<br><br>
+    Below are the default values:
+  </p>
+
+  <ul>
+    <li>dota_health_hurt_decay_time_max 0.8</li>
+    <li>dota_health_hurt_decay_time_min 0.3</li>
+    <li>dota_health_hurt_delay 0.1</li>
+    <li>dota_health_hurt_threshold 0</li>
+  </ul>
+
+  <p class="mt2">
+    The interesting one is the <b>threshold</b> one.<br>
+    If you set the threshold value high — you won't ever see the white flash.<br><br>
+
+    Healthbars will deplete instantly on any hit:
+  </p>
+
+  <video class="vid centered" autoplay muted preload="auto" loop playsinline poster="">
+  <source type="video/mp4" src="assets/images/options/options-healthbars-hurt-threshold.mp4">
+  </video>
+
+  <p class="mt2">
+    This provides faster visual feedback (but looks worse).
+  </p>
+
+  <div class="separator mt2"></div>
+
+  <p class="mt2">
+    There's currently a <i class="red">massive oversight</i> in the game.<br><br>
+
+    If you set <act>dota_health_hurt_decay_time_min</act> to a high value...<br>
+    you can easily see the main hero among its illusions.
+  </p>
+
+  <video class="vid centered" autoplay muted preload="auto" loop playsinline poster="">
+  <source type="video/mp4" src="assets/images/options/options-healthbars-hurt-bug.mp4">
+  </video>
+
+  <p class="mt2">
+    There is no way that's not a bug.
+  </p>
+
 </div>
 
 
