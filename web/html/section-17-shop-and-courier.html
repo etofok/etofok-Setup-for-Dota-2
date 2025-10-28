@@ -2,83 +2,139 @@
 
       <h2>Shop & Courier<img class="heroicon" src="assets/images/neutralicon/shopkeeper.jpg" alt=""></h2>
 
-      <p class="mt2">
-        Here's the simplest way to go about all-things-shop:<br>
-      </p>
+      <p class="mt2">       
+        <span class="green">Shop Settings</span><br><br>
 
-      <ul>
-        <li><b>Select Courier:</b> <kbd>F1</kbd></li>
-        <li><b>Open Shop:</b> <kbd>Alt</kbd> &nbsp + &nbsp <kbd>1</kbd></li>
-        <li><b>Quickbuy:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>2</kbd></li>
-        <li><b>Courier Deliver:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>3</kbd></li>
-        <li><b>Courier Burst:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>4</kbd></li>
-        <li><b>Courier Shield:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>5</kbd></li>
-        <li><b>Buy Sticky:</b> <kbd>Y</kbd> &nbsp, or anything really</li>      
-      </ul>
-
-      <p class="mt2">
-        Remember how we don't want to bind abilities that can be self-cast to <kbd>3</kbd><kbd>4</kbd>?<br>
-        Right, because instead of self-casting the ability you'd call for <act>Courier Deliver</act> and <act>Courier Burst</act> instead.<br><br>
-        Hopefully it does makes sense now.
-      </p>
-
-      <p class="mt2">
-        In any case, you want the following pattern to be easy:<br>
-        <act>QuickBuy</act> → <act>Courier Deliver</act> → <act>Courier Boost</act><br><br>
-
-        And it doesn't get any easier than <kbd>ALT</kbd><kbd>2</kbd> → <kbd>3</kbd> → <kbd>4</kbd>
-      </p>
-
-      <div class="separator mt2"></div>
-      
-      <p class="mt2">
-        <kbd>F1</kbd><act>Select Courier</act> is right next to our control groups.
-      </p>
-
-      <p class="mt2">
-        <span class="green">Fun fact!</span><br>
-        You can assign the courier to a Control Group!<br>
-      </p>
-
-      <div class="separator mt2"></div>
-
-      <p class="mt2">
-        <kbd>Y</kbd><act>Buy Stick<b><i>y</i></b></act> is not used very often, but we might as well just have it.<br><br>
-        This used to be more useful, before we weren't getting free <span class="nowrap"><spell>Teleport Scrolls</spell><img class="heroicon" src="assets/images/itemicon/teleportscroll.jpg" alt=""></span> on deaths.
-      </p>
-      
-      <div class="separator mt2"></div>     
-
-      <p class="mt2">
-        <img class="" src="assets/images/options/options-shopsearchgetsfocusonopen.jpg" alt="">
-        Uncheck these options:<br>
+        Uncheck these:<br>
           <act>Shop Always Uses Hotkeys</act><br>
           <act>Shop Search Gets Focus On Open</act><br>
           <act>Enable Simple Shop</act>
       </p>
+        
+      <img class="" src="assets/images/options/options-shopsearchgetsfocusonopen.jpg" alt="">
 
       <p class="mt2">
-        A lot of keys don't work with <act>Shop Search Gets Focus On Open</act> enabled.<br>
-        That makes sense, because the keys go straight into the search bar.<br>
-        The worst part: it blocks the keys that can't even be typed, like <kbd>F1</kbd> or <kbd>Alt</kbd><kbd>F1</kbd>.<br>
+        <act>Shop Search Gets Focus On Open</act> makes whatever you type go into the search bar of the Shop.<br><br>
+        
+        Well, that makes sense...<br>
+        <b>HOWEVER</b>, it consumes <i>all</i> the keys.<br><br>
+        Even keys (and key combinations) like <kbd>F1</kbd> and <kbd>Alt</kbd><kbd>F1</kbd> <i>which can't even be typed</i> if you think about it.
       </p>
 
-      <p class="mt2">
-        I prefer my hotkeys working all the time, thank you.
+      <p class="mt4">
+        <span class="red">This results in a scenario you don't want:</span><br><br>
+
+        You open the shop and suddenly you need to react to something.<br><br>
+
+        You <i>can't cast or select anything</i> until you close the shop because all the buttons you press will attempt to go into the search bar of the shop.<br>
+        Closing the shop takes time, so it's very likely to get you killed as you can't react immediately.<br><br>
+
+        I prefer my hotkeys working all the time, thank you, and for that reason I'm out.
       </p>
+
+      <div class="separator mt2"></div>
+
+      <p class="mt2">
+        <b class="green">Fun fact!</b><br><br>
+        - <kbd>&</kbd> filters out Sange and Yasha, Kaya and Sange, Yasha and Kaya<br>
+        - <kbd>1</kbd> filters out Diffusal Blade, Dagon 1 and Disperser<br>
+        - <kbd>2</kbd> filters out Boots of Travel 2, Dagon 2<br>
+        - <kbd>/</kbd> filters out Hurricane Pike, Dragon Lance, Kaya and Sange<br>
+        - <kbd>(</kbd>, <kbd>)</kbd> filters out Phase Boots, Power Threads<br>
+        - <kbd>7</kbd>, <kbd>#</kbd>, <kbd>=</kbd>, <kbd><</kbd>, <kbd>></kbd> filters out Hurricane Pike and Dragon Lance
+      </p>
+
+      <img class="" src="assets/images/options/options-shop-number-7.jpg" alt="">
 
       <div class="separator mt2"></div>     
 
       <p class="mt2">
-        <b class="green">Fun fact!</b><br><br>
-        - "&" filters out Sange and Yasha, Kaya and Sange, Yasha and Kaya<br>
-        - "1" filters out Diffusal Blade, Dagon 1 and Disperser<br>
-        - "2" filters out Boots of Travel 2, Dagon 2<br>
-        - "/" filters out Hurricane Pike, Dragon Lance, Kaya and Sange<br>
-        - "(", ")" filters out Phase Boots, Power Threads<br>
-        - "7", "#", "=", "<", ">" filters out Hurricane Pike and Dragon Lance
+        <span class="green">Shop Hotkeys</span><br><br>
+
+        There's definitely a balance between simplicity and optimization.<br>
+        Here's the simplest way to go about all-things-shop:
       </p>
 
-      <img class="" src="assets/images/options/options-shop-number-7.jpg" alt="">
+      <ul>
+        <li><b>Select Courier:</b> <kbd>F1</kbd></li><br>
+
+        <li><b>Open Shop:</b> <kbd>Alt</kbd> &nbsp + &nbsp <kbd>1</kbd></li>
+        <li><b>Quickbuy:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>2</kbd></li>
+        <li><b>Courier Deliver:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>3</kbd></li>
+        <li><b>Courier Burst:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>4</kbd></li>
+        <li><b>Buy Sticky:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>5</kbd><li>
+      </ul>
+
+      <p class="mt2">
+        <kbd>F1</kbd><act>Select Courier</act> is "select" key.<br>
+        So having it close to our Control Groups makes sense.
+      </p>
+
+      <div class="separator mt2"></div>
+
+      <p class="mt2">
+        You <b>want</b> the following pattern:<br>
+        <act>QuickBuy</act> → <act>Courier Deliver</act> → <act>Courier Burst</act><br><br>
+
+        And it doesn't get any simpler than <kbd>ALT</kbd><kbd>2</kbd> → <kbd>3</kbd> → <kbd>4</kbd>
+      </p>
+
+      <div class="separator mt2"></div>
+
+      <p class="mt2">
+        <span class="green">Buy Sticky</span><br><br>
+
+        <act>Buy Sticky</act> used to be much more useful before we weren't getting free <span class="nowrap"><spell>Teleport Scrolls</spell><img class="heroicon" src="assets/images/itemicon/teleportscroll.jpg" alt=""></span> on deaths.<br>
+        <span class="smaller">This was introduced in the 7.29 update (along with Dawnbreaker and Water Runes, and yes — you are getting old)</span>
+      </p>
+
+      <p class="mt2">
+        It's still useful though.<br>
+        Especially for core players, because they die less than they teleport around.
+      </p>      
+
+      <p class="mt4">
+        Long story short, bind <act>Buy Sticky</act> to <kbd>ALT</kbd><kbd>5</kbd> as a "low priority extra":
+      </p>
+
+      <ul>
+        <li><b>Open Shop:</b> <kbd>Alt</kbd> &nbsp + &nbsp <kbd>1</kbd></li>
+        <li><b>Quickbuy:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>2</kbd></li>
+        <li><b></span>Courier Deliver:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>3</kbd></li>
+        <li><b></span>Courier Burst:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>4</kbd></li>
+        <li><b class="green">Buy Sticky:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>5</kbd></li>
+      </ul>
+
+      <div class="separator mt2"></div>
+
+      <p class="mt2">
+        <b class="green">Consider this...</b>
+      </p>
+
+      <p class="mt2">
+        Interestingly, I used <kbd>ALT</kbd><kbd>MouseWheelUp</kbd> for <act>Open Shop</act> for about a year.<br>
+        And I honestly liked it.<br><br>
+
+        Despite how strange it sounds, it plays very well, because you 'scroll up to see a different layer'.<br>
+        I promise it's not bad.<br><br>
+
+        But <b>the main benefit</b> is that it allows you to shift the whole thing 1 key to the left:
+      </p>
+
+      <ul>
+        <li><b>Open Shop:</b> <kbd>Alt</kbd> &nbsp + &nbsp <kbd>MouseWheelUp</kbd></li>
+        <li><b><span class="green">← </span>Quickbuy:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>1</kbd></li>
+        <li><b><span class="green">← </span>Courier Deliver:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>2</kbd></li>
+        <li><b><span class="green">← </span>Courier Burst:</b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>3</kbd></li>
+        <li><b><span class="green">← Buy Sticky:</span></b> <kbd>Alt</kbd>&nbsp + &nbsp <kbd>4</kbd></li>
+      </ul>
+
+      <p class="mt2">
+        This is a killer layout because it solves every problem we faced in this section before I deleted a massive wall of text.<br><br>
+
+        A possible downside is that you lose continuity with other games that might not allow you to bind <kbd>Alt</kbd><kbd>MouseWheelUp</kbd> as your shop / inventory.<br><br>
+
+        But it's probably the best for speed, because it allows you to have instant access to everything.
+      </p>
 
     </div>
